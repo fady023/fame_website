@@ -1,5 +1,5 @@
 <meta charset="utf-8" />
-<title>{{$title ?? ''}} | Reale State Names - Dashboard</title>
+<title>{{$title ?? ''}} | Fame - Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta content="" name="description" />
 <meta content="Coderthemes" name="author" />

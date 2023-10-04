@@ -6,13 +6,6 @@
     <link href="{{asset('assets/libs/selectize/selectize.min.css')}}" rel="stylesheet" type="text/css" />
 @endsection
 
-@php
-    $Developers = DB::table('developers')->count();
-    $Projects = DB::table('projects')->count();
-    $realstate = DB::table('realstate')->count();
-    $Subscriptions = DB::table('newsletter')->count();
-
-@endphp
 @section('content')
 
     <!-- Start Content-->
@@ -40,7 +33,7 @@
                         </div>
                         <div class="col-6">
                             <div class="text-right">
-                                <h3 class="mt-1"><span data-plugin="counterup">{{ $Developers }}</span></h3>
+                                <h3 class="mt-1"><span data-plugin="counterup">0</span></h3>
                                 <p class="text-muted mb-1 text-truncate"> Developers</p>
                             </div>
                         </div>
@@ -58,7 +51,7 @@
                         </div>
                         <div class="col-6">
                             <div class="text-right">
-                                <h3 class="text-dark mt-1"><span data-plugin="counterup">{{ $Projects }}</span></h3>
+                                <h3 class="text-dark mt-1"><span data-plugin="counterup">0</span></h3>
                                 <p class="text-muted mb-1 text-truncate"> Projects </p>
                             </div>
                         </div>
@@ -76,7 +69,7 @@
                         </div>
                         <div class="col-6">
                             <div class="text-right">
-                                <h3 class="text-dark mt-1"><span data-plugin="counterup">{{ $realstate }}</span></h3>
+                                <h3 class="text-dark mt-1"><span data-plugin="counterup">0</span></h3>
                                 <p class="text-muted mb-1 text-truncate"> Properties</p>
                             </div>
                         </div>
@@ -94,7 +87,7 @@
                         </div>
                         <div class="col-6">
                             <div class="text-right">
-                                <h3 class="text-dark mt-1"><span data-plugin="counterup">{{ $Subscriptions }}</span></h3>
+                                <h3 class="text-dark mt-1"><span data-plugin="counterup">0</span></h3>
                                 <p class="text-muted mb-1 text-truncate">  Subscriptions</p>
                             </div>
                         </div>

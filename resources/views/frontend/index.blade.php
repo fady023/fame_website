@@ -18,7 +18,7 @@
                                 <font color="#FECD57">grow</font> your <br>customer base.</p>
 
                             <div class="masthead__content-action">
-                                <a href="javascript:void(0)" class="btn btn-orange btn-rounded btn-icon-left btn-lg js-video-button" data-video-id="TKnufs85hXk"> Get a Free Demo Now</a>
+                                <a href="{{url('/qoute')}}" class="btn btn-orange btn-rounded btn-icon-left btn-lg"> Get a Free Demo Now</a>
                             </div>
                         </div>
                     </div>
@@ -50,12 +50,14 @@
                     <div class="section__column section__column-top--left">
                         <span class="icon icon-gift"></span>
                         <h4 style="text-align: center;font-size: 14px;">Web & Mobile Services</h4>
-                        <img src="{{asset('frontend/assets/images/services/Services-mobile cards.png')}}" class="img-fluid zoom" alt="Using Software" />
+                         <a href="{{url('/services/web_mobile_services')}}">
+                            <img src="{{asset('frontend/assets/images/services/Services-mobile cards.png')}}" class="img-fluid zoom" alt="Using Software" />
+                        </a>
                         <p style="min-height: 95px;;font-size: 15px;padding: 9px 0px;">
                             Stay connected with your target audience and boost your visibility ONLINE.​
                         </p>
                         <div class="section__column-top--left-action">
-                            <a href="#" class="btn-link btn-primary">Learn More</a>
+                            <a href="{{url('/services/web_mobile_services')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -63,12 +65,14 @@
                     <div class="section__column section__column-top--left">
                         <span class="icon icon-paper-plane"></span>
                         <h4 style="text-align: center;font-size: 14px;">Digital Marketing</h4>
-                        <img src="{{asset('frontend/assets/images/services/Services digital marketing cards.png')}}" class="img-fluid zoom" alt="Using Software" />
+                         <a href="{{url('/services/digital_marketing')}}">
+                            <img src="{{asset('frontend/assets/images/services/Services digital marketing cards.png')}}" class="img-fluid zoom" alt="Using Software" />
+                        </a>
                         <p style="min-height: 95px;;font-size: 15px;padding: 9px 0px;">
                             Embrace the power of digital marketing for your brand and get FAMED!
                         </p>
                         <div class="section__column-top--left-action">
-                            <a href="#" class="btn-link btn-primary">Learn More</a>
+                            <a href="{{url('/services/digital_marketing')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -76,12 +80,14 @@
                     <div class="section__column section__column-top--left">
                         <span class="icon icon-paper-plane"></span>
                         <h4 style="text-align: center;font-size: 14px;">Media Production</h4>
-                        <img src="{{asset('frontend/assets/images/services/Media Production.png')}}" class="img-fluid zoom" alt="Using Software" />
+                         <a href="{{url('/services/media_production')}}">
+                            <img src="{{asset('frontend/assets/images/services/Media Production.png')}}" class="img-fluid zoom" alt="Using Software" />
+                        </a>
                         <p style="min-height: 95px;;font-size: 15px;padding: 9px 0px;">
                             Stand out from the competition and elevate your business to the next level with our media services.
                         </p>
                         <div class="section__column-top--left-action">
-                            <a href="#" class="btn-link btn-primary">Learn More</a>
+                            <a href="{{url('/services/media_production')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -89,12 +95,14 @@
                     <div class="section__column section__column-top--left">
                         <span class="icon icon-paper-plane"></span>
                         <h4 style="text-align: center;font-size: 14px;">PR & Communications​</h4>
-                        <img src="{{asset('frontend/assets/images/services/PRCommunications​.png')}}" class="img-fluid zoom" alt="Using Software" />
+                         <a href="{{url('/services/prcommunications​')}}">
+                            <img src="{{asset('frontend/assets/images/services/PRCommunications​.png')}}" class="img-fluid zoom" alt="Using Software" />
+                        </a>
                         <p style="min-height: 95px;font-size: 15px;padding: 9px 0px;">
                             Deliver your brands message, value and voice easily to your clients NOW with FAME!
                         </p>
                         <div class="section__column-top--left-action">
-                            <a href="#" class="btn-link btn-primary">Learn More</a>
+                            <a href="{{url('/services/prcommunications​')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -102,12 +110,14 @@
                     <div class="section__column section__column-top--left">
                         <span class="icon icon-paper-plane"></span>
                         <h4 style="text-align: center;font-size: 14px;">3D Booths & Display Design ​​</h4>
-                        <img src="{{asset('frontend/assets/images/services/Display Design.png')}}" class="img-fluid zoom" alt="Using Software" />
+                         <a href="{{url('/services/display_design')}}">
+                            <img src="{{asset('frontend/assets/images/services/Display Design.png')}}" class="img-fluid zoom" alt="Using Software" />
+                        </a>
                         <p style="min-height: 95px;;font-size: 15px;padding: 9px 0px;">
                             Generate a memorable impact with your clients through your exhibition designs and high-quality materials.
                         </p>
                         <div class="section__column-top--left-action">
-                            <a href="#" class="btn-link btn-primary">Learn More</a>
+                            <a  href="{{url('/services/display_design')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -116,12 +126,14 @@
                     <div class="section__column section__column-top--left">
                         <span class="icon icon-paper-plane"></span>
                         <h4 style="text-align: center;font-size: 14px;">Branding ​​</h4>
-                        <img src="{{asset('frontend/assets/images/services/Branding.png')}}" class="img-fluid zoom" alt="Using Software" />
+                         <a href="{{url('/services/branding')}}">
+                            <img src="{{asset('frontend/assets/images/services/Branding.png')}}" class="img-fluid zoom" alt="Using Software" />
+                        </a>
                         <p style="min-height: 95px;;font-size: 15px;padding: 9px 0px;">
                             Transform your ideas into reality now with our innovative team creators.
                         </p>
                         <div class="section__column-top--left-action">
-                            <a href="#" class="btn-link btn-primary">Learn More</a>
+                            <a  href="{{url('/services/branding')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -130,12 +142,14 @@
                     <div class="section__column section__column-top--left">
                         <span class="icon icon-paper-plane"></span>
                         <h4 style="text-align: center;font-size: 14px;">Business Startup ​​</h4>
-                        <img src="{{asset('frontend/assets/images/services/Business Startup.png')}}" class="img-fluid zoom" alt="Using Software" />
+                         <a href="{{url('/services/business_startup')}}">
+                            <img src="{{asset('frontend/assets/images/services/Business Startup.png')}}" class="img-fluid zoom" alt="Using Software" />
+                        </a>
                         <p style="   min-height: 95px;;font-size: 15px;padding: 9px 0px;">
                             Make your dream business come true in the MENA region with our consultancy services for start-ups.
                         </p>
                         <div class="section__column-top--left-action">
-                            <a href="#" class="btn-link btn-primary">Learn More</a>
+                            <a href="{{url('/services/business_startup')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -144,7 +158,7 @@
     </section>
     <div class="section__divider section__divider-right d-none d-lg-block"></div>
 
-    <section class="section pb-40" style="background-color: #FFFAEE;">
+    <section class="section pb-40" style="background-color: #FFFAEE;    padding: 14px 0;">
         <div class="container">
 
             <div class="row">
@@ -214,8 +228,65 @@
         </div>
     </section>
 
-    <div class="section__divider section__divider-left d-none d-lg-block"></div>
+    <div class="section__divider section__divider-left d-none d-lg-block"  id="prtofoilio"></div>
 
+
+<section class="section pt-40">
+        <div class="container">
+          <div class="row">
+
+                <div class="col-lg-5 offset-lg-1 mb-40" >
+                    <h2 class="section__heading section__heading-left">Our Portfolio </h2>
+                    <p>
+                       We LOVE to connect BRANDS with PEOPLE.<br>
+                       We believe that the clients success is also our<br>
+                       success, and were so proud to be part of their stories.
+                    </p>
+
+                </div>
+                <div class="col-lg-6 mb-40">
+                    
+                     <div class="gallery__filter">
+                <ul class="gallery__filter--list">
+                    <li class="active"><button class="gallery__filter--list-link">All</button></li>
+                    <li><button class="gallery__filter--list-link">Graphic</button></li>
+                    <li><button class="gallery__filter--list-link">Branding</button></li>
+                    <li><button class="gallery__filter--list-link">Development</button></li>
+                </ul>
+            </div>
+                </div>
+            </div>
+           
+
+            <div class="gallery__content">
+                  <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-active-nav">
+                    <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
+
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage" style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
+                               @foreach($Portfolios as $Portfolio)
+                                    <div class="owl-item cloned" style="width: 808px;">
+                                        <div class="item">
+                                            <img src="{{url('portfolio/',$Portfolio->image)}}" class="img-fluid" alt="App dashboard" width="808" height="591">
+                                        </div>
+                                    </div>
+                                @endforeach
+                               
+                            </div>
+                        </div>
+                        <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
+                        <div class="owl-dots disabled"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+
+           
+        </div>
+    </section>
 
 
     <section class="section pb-0" style="background-color: #FFFAEE;" id="contact">
@@ -246,11 +317,13 @@
                                 <div class="col-md-6 form-group">
                                     <label for="subject">Select Service</label>
                                     <select class="form-control js-select select2-hidden-accessible" id="subject" aria-describedby="subject" placeholder="Select Service" data-select2-id="subject" tabindex="-1" aria-hidden="true">
-                                        <option value="1">Buy Template</option>
-                                        <option value="3">Marketing</option>
-                                        <option value="4">Licence</option>
-                                        <option value="5">Support</option>
-                                        <option value="5">Other subject</option>
+                                        <option value="Web and Mobile Development">Web and Mobile Development</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Media Production">Media Production</option>
+                                        <option value="PR & Communications">PR & Communications</option>
+                                        <option value="3D Booths & Display Design​">3D Booths & Display Design</option>
+                                        <option value="Branding">Branding​</option>
+                                        <option value="Business Startup​">Business Startup</option>
                                     </select>
 
                                 </div>

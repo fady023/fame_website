@@ -47,6 +47,20 @@
             <ul id="side-menu">
 
                     <li>        
+                        <a href=" {{route('projectsIndex',['admin','projects' ,'index']) }}">
+                            <i data-feather="home"></i>
+                            <span>  Pojects </span>
+                        </a>
+                    </li>
+                     <li>        
+                        <a href=" {{route('portfoliosIndex',['admin','portfolios' ,'index']) }}">
+                            <i data-feather="home"></i>
+                            <span>  Portfolio </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>        
                         <a href=" {{route('blogsIndex',['admin','blogs' ,'index']) }}">
                             <i data-feather="home"></i>
                             <span>  Blogs </span>

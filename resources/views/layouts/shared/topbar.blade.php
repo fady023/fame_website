@@ -323,10 +323,10 @@
     
             <a href="{{route('any', ['dashboard'])}}" class="logo logo-light text-center">
                 <span class="logo-sm">
-                    <img src="{{url('frontend/images/Name Logo-01.png')}}" alt="Logo" height="20" >
+                    <img src="{{url('frontend/assets/brand/logo.png')}}" alt="Logo" height="20" >
                 </span>
                 <span class="logo-lg">
-                        <img src="{{url('frontend/images/Name Logo-01.png')}}" alt="Logo" height="50" >
+                        <img src="{{url('frontend/assets/brand/logo.png')}}" alt="Logo" height="50" >
                 </span>
             </a>
         </div>

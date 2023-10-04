@@ -18,11 +18,11 @@
             </div>
             <!-- End Header menu for mobile -->
             <ul class="menu">
-                <li class="active"><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#prtofoilio">Prtofoilio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active"><a href="/index#home">Home</a></li>
+                <li><a href="/index#services">Services</a></li>
+                <li><a href="/index#about">About</a></li>
+                <li><a href="/index#prtofoilio">Prtofoilio</a></li>
+                <li><a href="/index#contact">Contact</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
             <!--<ul class="attributes">
