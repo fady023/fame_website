@@ -35,6 +35,7 @@ Route::get('/services/business_startup', [IndexController::class, 'business_star
 
 
 Route::get('/qoute', [IndexController::class, 'qoute'])->name('qoute');
+Route::post('contact', [IndexController::class, 'contact'])->name('contact');
 
 
 

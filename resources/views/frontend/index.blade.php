@@ -288,59 +288,70 @@
         </div>
     </section>
 
-
-    <section class="section pb-0" style="background-color: #FFFAEE;" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-40">
-                    <img src="{{asset('frontend/assets/images/SmartObject 1.png')}}" class="img-fluid" alt="Business Man with Laptop" width="389" height="391" style="margin-top: 130px;">
-                </div>
-                <div class="col-lg-6 offset-lg-1 mb-40">
-                    <h2 class="section__heading section__heading-center">Get in touch</h2>
-                    <div class="contact__main">
-                        <p>Lets explore how we can scale your online business, as our team is here to help.
-                            <form class="row">
-                                <div class="col-md-6 form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Name">
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label for="name">Phone</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Phone">
-                                </div>
-
-                                <div class="col-md-6 form-group">
-                                    <label for="emal">Email address</label>
-                                    <input type="email" class="form-control" id="emal" aria-describedby="emal" placeholder="Email">
-                                </div>
-
-                                <div class="col-md-6 form-group">
-                                    <label for="subject">Select Service</label>
-                                    <select class="form-control js-select select2-hidden-accessible" id="subject" aria-describedby="subject" placeholder="Select Service" data-select2-id="subject" tabindex="-1" aria-hidden="true">
-                                        <option value="Web and Mobile Development">Web and Mobile Development</option>
-                                        <option value="Digital Marketing">Digital Marketing</option>
-                                        <option value="Media Production">Media Production</option>
-                                        <option value="PR & Communications">PR & Communications</option>
-                                        <option value="3D Booths & Display Design​">3D Booths & Display Design</option>
-                                        <option value="Branding">Branding​</option>
-                                        <option value="Business Startup​">Business Startup</option>
-                                    </select>
-
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <label for="comment">Message</label>
-                                    <textarea class="form-control" id="comment" aria-describedby="comment" rows="4">Message</textarea>
-                                </div>
-
-                                <div class="col-md-12 form-action">
-                                    <button type="submit" class="btn btn-primary btn-rounded">Submit Now</button>
-                                </div>
-                            </form>
+   
+        <section class="section pb-0" style="background-color: #FFFAEE;" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-40">
+                        <img src="{{asset('frontend/assets/images/SmartObject 1.png')}}" class="img-fluid" alt="Business Man with Laptop" width="389" height="391" style="margin-top: 130px;">
                     </div>
+                    
+                    <div class="col-lg-6 offset-lg-1 mb-40">
+                        <h2 class="section__heading section__heading-center">Get in touch</h2>
+                        @if (session()->has('message'))
+                         <div class="alert alert-success alert-dismissible">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                    {{session('message')}}
+                        </div>
+                        @endif
+                        <div class="contact__main">
+                            <p>Lets explore how we can scale your online business, as our team is here to help.
+                                <form class="row" method="post" action="{{ route('contact')}}" enctype="multipart/form-data">
+                                @csrf
+                                    <div class="col-md-6 form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="name">Phone</label>
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                                    </div>
 
+                                    <div class="col-md-6 form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Email" required>
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <label for="subject">Select Service</label>
+                                        <select required class="form-control js-select select2-hidden-accessible" id="subject" name="subject" aria-describedby="subject" placeholder="Select Service" data-select2-id="subject" tabindex="-1" aria-hidden="true">
+                                            <option value="Web and Mobile Development">Web and Mobile Development</option>
+                                            <option value="Digital Marketing">Digital Marketing</option>
+                                            <option value="Media Production">Media Production</option>
+                                            <option value="PR & Communications">PR & Communications</option>
+                                            <option value="3D Booths & Display Design​">3D Booths & Display Design</option>
+                                            <option value="Branding">Branding​</option>
+                                            <option value="Business Startup​">Business Startup</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="col-md-12 form-group">
+                                        <label for="comment">Message</label>
+                                        <textarea class="form-control" id="comment" name="message" aria-describedby="comment" rows="4" required>Message</textarea>
+                                    </div>
+
+                                    <div class="col-md-12 form-action">
+                                        <button type="submit" class="btn btn-primary btn-rounded">Submit Now</button>
+                                    </div>
+                                </form>
+                        </div>
+
+                    </div>
+                    
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+   
+
 @endsection

@@ -10,6 +10,7 @@ use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Support\Carbon;
 use App\Models\Project;
 use App\Models\Portfolio;
+use App\Models\Contact;
 class IndexController extends Controller
 {
     public function index(){
@@ -141,7 +142,13 @@ class IndexController extends Controller
             return back()->with('message', 'Submit comment for review');
     }
 
+    public function contact(request $request)
+    {
+        Contact::create($request->all());
+        return back()->with('message', 'Submit Message for review');
+    }
+
     
-   
+    
     
 }
