@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\ProjectsController;
 use App\Http\Controllers\Admin\PortfolioController;
 use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\QouteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,7 @@ Route::get('/services/business_startup', [IndexController::class, 'business_star
 
 
 Route::get('/qoute', [IndexController::class, 'qoute'])->name('qoute');
+Route::post('qoutes', [IndexController::class, 'qoutes'])->name('qoutes');
 Route::post('contact', [IndexController::class, 'contact'])->name('contact');
 
 
@@ -86,6 +88,18 @@ Route::group(['prefix'=>'dashboard','middleware'=>['auth','is_admin']],function 
          Route::get('{first}/{second}/{third}/blogs/destroy/{id}', [BlogController::class, 'destroy'])->name('blogsDestroy');
          Route::get('{first}/{second}/{third}/blogs/del/{id}', [BlogController::class, 'del'])->name('blogsdel');
 
+
+          //////////////////  Qoutes ///////////////////
+          Route::get('{first}/{second}/{third}/qoutes', [QouteController::class, 'index'])->name('qoutesIndex');
+          Route::get('{first}/{second}/{third}/qoutes/create', [QouteController::class, 'create'])->name('qoutesCreate');
+          Route::post('{first}/{second}/{third}/qoutes/store', [QouteController::class, 'store'])->name('qoutesStore');
+          Route::get('{first}/{second}/{third}/qoutes/show', [QouteController::class, 'show'])->name('qoutesShow');
+          Route::get('{first}/{second}/{third}/qoutes/edit/{id}', [QouteController::class, 'edit'])->name('qoutesEdit');
+          Route::POST('{first}/{second}/{third}/qoutes/update', [QouteController::class, 'update'])->name('qoutesUpdate');
+          Route::get('{first}/{second}/{third}/qoutes/destroy/{id}', [QouteController::class, 'destroy'])->name('qoutesDestroy');
+ 
+
+         
           //////////////////  Contacts ///////////////////
           Route::get('{first}/{second}/{third}/contacts', [ContactController::class, 'index'])->name('contactsIndex');
           Route::get('{first}/{second}/{third}/contacts/create', [ContactController::class, 'create'])->name('contactsCreate');

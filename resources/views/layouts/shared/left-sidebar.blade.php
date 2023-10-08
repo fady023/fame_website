@@ -67,13 +67,20 @@
                         </a>
                     </li>
                     
-                      <li>        
+                     <li>        
+                    <a href="{{route('qoutesIndex',['admin','qoutes' ,'index']) }}">
+                        <i data-feather="home"></i>
+                        <span>  Qoutes  </span>
+                    </a>
+                </li>
+
+                <li>        
                     <a href="{{route('contactsIndex',['admin','contacts' ,'index']) }}">
                         <i data-feather="home"></i>
                         <span>  Contacts  </span>
                     </a>
                 </li>
-                
+
                 <li>        
                     <a href="{{route('settingsIndex',['admin','settings' ,'index']) }}">
                         <i data-feather="home"></i>

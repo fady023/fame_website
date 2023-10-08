@@ -11,6 +11,7 @@ use Illuminate\Support\Carbon;
 use App\Models\Project;
 use App\Models\Portfolio;
 use App\Models\Contact;
+use App\Models\Qoute;
 class IndexController extends Controller
 {
     public function index(){
@@ -149,6 +150,12 @@ class IndexController extends Controller
     }
 
     
+    public function qoutes(request $request)
+    {
+        //dd($request->all());
+        Qoute::create($request->all());
+        return back()->with('message', 'Submit Qoute for review');
+    }
     
     
 }
