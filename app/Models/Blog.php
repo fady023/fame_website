@@ -20,6 +20,11 @@ class Blog extends Model
     ];
 
     protected $fillable = [
-        'title', 'details'
+        'title', 'details','category_id'
     ];
+
+
+    public function category(){
+        return $this->belongsTo(CategoryBlog::class,'category_id','id');
+    }
 }

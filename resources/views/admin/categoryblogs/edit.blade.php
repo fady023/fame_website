@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Update Property', 'mode' => 'ltr'])
+@extends('layouts.vertical', ['title' => 'Update Category Blog', 'mode' => 'ltr'])
 @section('css')
     <!-- Plugins css -->
     <link href="{{asset('assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
@@ -95,65 +95,26 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="/dashboard">DashBoard</a></li>
-                            <li class="breadcrumb-item active">Update Property</li>
+                            <li class="breadcrumb-item active">Update Category Blog</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Update / Property</h4>
+                    <h4 class="page-title">Update / Category Blog</h4>
                 </div>
             </div>
         </div>     
         <!-- end page title --> 
 
-        <form method="POST" action="{{ route('blogsUpdate',['admin','blogs' ,'update'])  }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('categoryblogsUpdate',['admin','categoryblogs' ,'update'])  }}" enctype="multipart/form-data">
             @csrf
-                <input type="hidden" name="id" value="{{ $edit_Blogs->id }}">
+                <input type="hidden" name="id" value="{{ $edit_CategoryBlogs->id }}">
         <div class="row">
-            <div class="col-lg-6">
-                <div class="card-box">
-                    <h5 class="text-uppercase bg-light p-2 mt-0 mb-3">General</h5>
- 
+            <div class="col-lg-12">
+                <div class="card-box"> 
                     <div class="form-group mb-3">
-                        <label for="product-name">Title<span class="text-danger">*</span></label>                        
-                        <input class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" type="text" name="title" id="title" value="{{ $edit_Blogs->title }}" required>
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="product-description">Description <span class="text-danger">*</span></label>
-                        <textarea class="form-control summernote"  rows="20" name="details" required> {{ $edit_Blogs->details }} </textarea>
+                        <label for="product-name">name<span class="text-danger">*</span></label>                        
+                        <input class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" type="text" name="name" id="title" value="{{ $edit_CategoryBlogs->name }}" required>
                     </div>
                 </div> <!-- end card-box -->
-
-
-
-                <div class="card-box" style="height: 780px;">
-                    <h5 class="text-uppercase mt-0 mb-3 bg-light p-2">Images</h5>
-                    <div class="form-group mb-3">
-                       <div class="upload__box">
-                        <div class="upload__btn-box">
-                            <label class="upload__btn">
-                            <p style=" margin: 0;">Upload images</p>
-                            <input type="file" name="image[]" multiple="" data-max_length="20" class="upload__inputfile">
-                            </label>
-                        </div>
-                          <div class="upload__img-wrap"></div>
-                        @foreach($images as $image)
-                                    <div class="column" style="height:100px;border:1px solid #eaeaea;text-align: center;">
-                                    <button type="button" style="background-color: red;color: white;" onclick="location.href='{{ url('/dashboard/admin/blogs/del/blogs/del/'.$image->id) }}';" class="btn btn-light my-2">x</button>
-
-                                        <img src="{{url('blogs/',$image->image)}}"style="height:100px" />
-                                    </div>
-                           
-                        @endforeach
-                        </div>
-
-
-                    </div>
-
-                </div> <!-- end col-->
-
-               
-                
-               
 
             </div> <!-- end col -->
         </div>

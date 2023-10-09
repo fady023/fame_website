@@ -36,7 +36,7 @@
                        Title
                     </th>
                      <th>
-                       Comment
+                       category
                     </th>
                     
                     <th>
@@ -57,16 +57,9 @@
                             <td>
                                 {{$Blog->title}}
                             </td>
-                            @php
-                               $count =  DB::table('blogcomment')->where('bolg_id',$Blog->id)->count();
-                            @endphp
+                             
                              <td>
-                                @if($count  > 0 )
-                                    {{ $count }}
-                                @else
-                                    0
-                                @endif
-                               
+                                {{$Blog->category->name}}
                             </td>
                            
                             <td>

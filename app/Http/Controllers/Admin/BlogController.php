@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\BlogImages;
 use App\Models\BlogComment;
+use App\Models\CategoryBlog;
 use App\Models\LogActivity;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,12 +20,14 @@ class BlogController extends Controller
     public function index(Request $request)
     {
         $Blogs = Blog::orderBy('id', 'DESC')->get();
+
         return view('admin.blogs.index', compact('Blogs'));
     }
 
     public function create()
     {
-        return view('admin.blogs.create');
+        $categoryblogs = CategoryBlog::orderBy('id', 'DESC')->get();
+        return view('admin.blogs.create', compact('categoryblogs'));
     }
 
     public function store(request $request)
@@ -34,6 +37,7 @@ class BlogController extends Controller
         $blogid = Blog::insertGetId([
             'title' => $request->title,
             'details'=> $request->details,
+            'category_id'=> $request->category_id,
         ]);
           
 
@@ -66,8 +70,9 @@ class BlogController extends Controller
     {
         $edit_Blogs=Blog::findOrFail($request->id);
         $images = BlogImages::where('blog_id',$request->id)->get();
+        $categoryblogs = CategoryBlog::orderBy('id', 'DESC')->get();
 
-        return view('admin.blogs.edit', compact('edit_Blogs','images'));
+        return view('admin.blogs.edit', compact('edit_Blogs','images','categoryblogs'));
     }
 
     public function update(request $request)
@@ -77,6 +82,7 @@ class BlogController extends Controller
         $blogid = Blog::where('id',$request->id)->update([
             'title' => $request->title,
             'details'=> $request->details,
+            'category_id'=> $request->category_id,
         ]);
           
        

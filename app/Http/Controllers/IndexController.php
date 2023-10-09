@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\Setting;
 use App\Models\Blog;
+use App\Models\CategoryBlog;
 use Illuminate\Support\Str;
 use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Support\Carbon;
@@ -112,7 +113,10 @@ class IndexController extends Controller
         $address  = Setting::where('key','site.address')->value('value');
        
         $Blogs = Blog::orderBy('id', 'DESC')->get();
-        return view('frontend.list_blogs', compact('phone','email','address','Blogs'));
+
+        $Last_Blogs = Blog::orderBy('id', 'DESC')->take(2)->get();
+        $Categories = CategoryBlog::orderBy('id', 'DESC')->get();
+        return view('frontend.list_blogs', compact('phone','email','address','Blogs','Last_Blogs','Categories'));
     }
     
 

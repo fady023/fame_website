@@ -116,10 +116,22 @@
                         <textarea class="form-control summernote"  rows="20" name="details"  placeholder="Please enter details" required></textarea>
                     </div>
 
+
+  <div class="form-group">
+                    <label for="product-category">Categor <span class="text-danger">*</span></label>
+                    <select class="form-control select2 {{ $errors->has('categoryblog') ? 'is-invalid' : '' }}" name="category_id" id="category_id" required>
+                        @foreach($categoryblogs as $categoryblog)
+                            <option value="{{ $categoryblog->id }}">{{ $categoryblog->name }}</option>
+                        @endforeach
+                    </select>
+            </div>
+
+
+
                 </div> <!-- end card-box -->
 
-               
-
+                
+           
 
                 <div class="card-box" style="height: 780px;">
                     <h5 class="text-uppercase mt-0 mb-3 bg-light p-2">Images</h5>

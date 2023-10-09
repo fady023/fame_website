@@ -8,44 +8,18 @@
                 <div class="col-lg-8 p-0">
                     <div class="content">
                         <h2>
-                            10 Efficient & Measurable Benefits of Software
+                            {{ $blog->title }}
                         </h2>
                         <div class="meta">
                             <div class="meta-item">
-                                <i class="fa fa-refresh"></i> <span>Sep 22,2023</span>
+                                <i class="fa fa-refresh"></i> <span>{{ date('d-m-Y', strtotime($blog->created_at)) }}</span>
                             </div>
                         </div>
-                        <img class="img-fluid" src="{{ asset('frontend/assets/images/blog-1.png') }}" />
-
-                        <p>
-                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt, explicabo.
-                        </p>
-
-                        <h3>
-                            At vero eos et accusam
-                        </h3>
-                        <p>
-                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt, explicabo.
-                        </p>
-                        <img class="img-fluid" src="{{ asset('frontend/assets/images/blog-4.png') }}" />
-                        <p>
-                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt, explicabo.
-                        </p>
-
-                        <h3>
-                            At vero eos et accusam
-                        </h3>
-                        <p>
-                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt, explicabo.
-                        </p>
+                         @php
+                            $img = DB::table("blogallery")->where("blog_id",$blog->id)->first();
+                        @endphp
+                        <img class="img-fluid" src="{{url('blogs/',$img->image)}}" />
+                            {!! $blog->details !!}
                     </div>
                 </div>
                 <div class="col-lg-3 p-0">

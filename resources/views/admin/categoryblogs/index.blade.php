@@ -44,7 +44,7 @@
                    
                         <tr>
                             <td>
-                                {{$Blog->name}}
+                                {{$CategoryBlog->name}}
                             </td>
                             <td>
                                  <a class="btn btn-info" href="{{route('categoryblogsEdit',['admin','categoryblogs' ,'edit',$CategoryBlog->id] )}}">
