@@ -57,12 +57,12 @@ class IndexController extends Controller
         return view('frontend.services.media_production', compact('phone','email','address','projects'));
     }
 
-    public function prcommunications​(){
+    public function pr_com(){
         $phone  = Setting::where('key','site.phone')->value('value');
         $email  = Setting::where('key','site.email')->value('value');
         $address  = Setting::where('key','site.address')->value('value');
         $projects = Project::orderBy('id', 'DESC')->take(3)->get();
-        return view('frontend.services.prcommunications​', compact('phone','email','address','projects'));
+        return view('frontend.services.pr_com', compact('phone','email','address','projects'));
     }
 
     public function display_design(){

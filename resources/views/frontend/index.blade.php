@@ -95,14 +95,14 @@
                     <div class="section__column section__column-top--left">
                         <span class="icon icon-paper-plane"></span>
                         <h4 style="text-align: center;font-size: 14px;">PR & Communications​</h4>
-                         <a href="{{url('/services/prcommunications​')}}">
+                         <a href="{{url('/services/pr_com')}}">
                             <img src="{{asset('frontend/assets/images/services/PRCommunications​.png')}}" class="img-fluid zoom" alt="Using Software" />
                         </a>
                         <p style="min-height: 95px;font-size: 15px;padding: 9px 0px;">
                             Deliver your brands message, value and voice easily to your clients NOW with FAME!
                         </p>
                         <div class="section__column-top--left-action">
-                            <a href="{{url('/services/prcommunications​')}}" class="btn-link btn-primary">More</a>
+                            <a href="{{url('/services/pr_com')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>

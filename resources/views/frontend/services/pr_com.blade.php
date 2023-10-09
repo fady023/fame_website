@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','Pr & Communication')
+@section('title','Home')
 @section('content')
 
  
@@ -7,13 +7,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 offset-lg-1" style="margin-top: 150px;text-align: center;">
-                    <p> Pr & Communication</p>
+                    <p> Media Production </p>
                     <p>
-                        We focus on your costumers needs with our PR & Communication serivces to drive a positive impact on your business online.
+                       By using innovative ideas and advanced technology tools, well help you to enhance your brand's image and improve your customers' experiences.
                     </p>
                 </div>
                 <div class="col-lg-7 mb-40">
-                    <img src="{{asset('frontend/assets/images/services/Group 1561.png')}}" class="img-fluid" alt="Business Man with Laptop" width="389" height="391">
+                    <img src="{{asset('frontend/assets/images/services/Frame.png')}}" class="img-fluid" alt="Business Man with Laptop" width="389" height="391">
                 </div>
             </div>
         </div>
@@ -24,12 +24,12 @@
             <div class="row">
 
                 <div class="col-lg-5 mb-40">
-                    <img src="{{asset('frontend/assets/images/services/Group (2).png')}}" class="img-fluid" alt="Business Man with Laptop" width="389" height="391">
+                    <img src="{{asset('frontend/assets/images/services/Group (1).png')}}" class="img-fluid" alt="Business Man with Laptop" width="389" height="391">
                 </div>
 
                 <div class="col-lg-6 offset-lg-1" style="margin-top: 150px;text-align: center;">
                     <p>
-                        Deliver your brands message, value and voice easily to your clients NOW with FAME!​
+                       Stand out from the competition and elevate your business to the next level with our media production services.
                     </p>
                 </div>
             </div>
@@ -114,7 +114,7 @@
         </div>
     </section>
 
-   
+    
 <section class="section pb-0">
     <div class="container">
         <div class="row">
