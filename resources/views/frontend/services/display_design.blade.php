@@ -1,159 +1,153 @@
 @extends('frontend.layouts.master')
-@section('title','Home')
+@section('title', 'Home')
 @section('content')
 
- 
-<section class="section pb-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 offset-lg-1" style="margin-top: 150px;text-align: center;">
-                    <p> 3D Booths & Display Design</p>
+
+    <section class="section service-head">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-xl-between justify-content-center">
+                <div class="col-xl-6 col-12 p-0">
+                    <h2>3DBooths and Display Design</h2>
                     <p>
-                       Better design means better experience.
-Generate a memorable impact with your clients through your exhibition designs and get FAMED.
+                        Better design means better experience.
+                        Generate a memorable impact with your clients through your exhibition designs and get
+                        <span>FAMED</span>.
+                    </p>
+                    <p>
+                        Whatever your event is, it's our mission to make your designs come out looking spectacular with
+                        high-quality materials.​
                     </p>
                 </div>
-                <div class="col-lg-7 mb-40">
-                    <img src="{{asset('frontend/assets/images/services/Group (3).png')}}" class="img-fluid" alt="Business Man with Laptop" width="389" height="391">
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="col-xl-auto col-12 p-0">
+                    <div class="img-container">
 
-    <section class="section pb-0">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-5 mb-40">
-                    <img src="{{asset('frontend/assets/images/services/Group (4).png')}}" class="img-fluid" alt="Business Man with Laptop" width="389" height="391">
-                </div>
-
-                <div class="col-lg-6 offset-lg-1" style="margin-top: 150px;text-align: center;">
-                    <p>
-                       Whatever your event is, its our mission to make your designs come out looking spectacular with high-quality materials.​
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Start Section -->
-    <section class="section pb-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <h2 class="section__heading section__heading-center">Our Services</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section__column section__column-left">
-                        <img src="{{asset('frontend/assets/images/services/icons/Group 78.png')}}" class="icon icon-device column-icon">
-                        <h4>UI / UX Designs.​</h4>
-                        <p>
-                            UI/UX design services focus on creating user interfaces and experiences that are visually appealing, intuitive, and user-friendly for digital products such as websites, mobile apps, and software applications. Here's a brief overview of UI/UX design services:
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="section__column section__column-left">
-                        <img src="{{asset('frontend/assets/images/services/icons/Group 81.png')}}" class="icon icon-device column-icon">
-                        <h4>Mobile Development.​</h4>
-                        <p>
-                            Mobile app development services involve the creation of software applications specifically designed to run on mobile devices, such as smartphones and tablets. These services encompass the entire app development lifecycle, from conceptualization to deployment
-                            and ongoing maintenance. Here's a brief overview of mobile app development services:
-
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="section__column section__column-left">
-                        <img src="{{asset('frontend/assets/images/services/icons/Group 79.png')}}" class="icon icon-device column-icon">
-                        <h4>Web Development.​</h4>
-                        <p>
-                            Web development services encompass the process of creating and maintaining websites and web applications. These services involve a range of tasks, from initial planning and design to development, testing, and ongoing maintenance. Here's a brief overview
-                            of web development services: </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="section__column section__column-left">
-                        <img src="{{asset('frontend/assets/images/services/icons/online-shopping.png')}}" class="icon icon-device column-icon">
-
-                        <h4>E-commerce.</h4>
-                        <p>
-                            E-commerce services encompass a wide range of activities related to the buying and selling of products or services over the internet. These services are designed to facilitate online transactions, improve customer experiences, and help businesses establish
-                            and grow their online presence. Here's a brief overview of e-commerce services:
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="section__column section__column-left">
-                        <img src="{{asset('frontend/assets/images/services/icons/Group 80.png')}}" class="icon icon-device column-icon">
-                        <h4>ERP Systems.​</h4>
-                        <p>
-                            Enterprise Resource Planning (ERP) system services involve the implementation, customization, and ongoing support of ERP software solutions for businesses and organizations. ERP systems are comprehensive software platforms designed to streamline and centralize
-                            various business processes and functions. Here's a brief overview of ERP system services:
-
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section__column section__column-left">
-                        <img src="{{asset('frontend/assets/images/services/icons/Group 19.png')}}" class="icon icon-device column-icon">
-                        <h4>POS</h4>
-                        <p>
-                            Point of Sale (POS) services refer to the technology and software solutions used by businesses to facilitate transactions with customers. POS systems are commonly used in retail stores, restaurants, and various other businesses to process payments, manage
-                            inventory, and streamline sales operations. Here's a brief overview of POS services:
-                        </p>
+                        <img
+                            src="{{ asset('frontend/assets/images/services/stock-market-investor-analyst-broker-analyzing-financial-trade-crypto-stock-market-exchange-platform 1.png') }}">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-<section class="section pb-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <h2 class="section__heading section__heading-center">Our Projects</h2>
+    <section class="section pb-0 service-details">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2>Our Services</h2>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center mb-40">
-                <p>
-                    We are proud of our work and happy to show our case studies </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="owl-active-nav">
-                    <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
-
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage" style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
-                               @foreach($projects as $project)
-                                    <div class="owl-item cloned" style="width: 1050px;">
-                                        <div class="item">
-                                            <img src="{{url('projects/',$project->image)}}" class="img-fluid" alt="App dashboard" width="1050" height="591">
-                                        </div>
-                                    </div>
-                                @endforeach
-                               
-                            </div>
+            <div class="row">
+                <div class="col-lg-6 px-sm-3 px-0">
+                    <div class="item">
+                        <img src="{{ asset('frontend/assets/images/services/icons/billboard_7254590 1.png') }}"
+                            class="img-fluid">
+                        <div class="text">
+                            <h4>Outdoor Displays​</h4>
+                            <p>
+                                Have the in-house expertise by using outdoor displays for your own campaign now in all
+                                sizes. It's an effective tool that can be used to increase brand awareness or engage
+                                customers.
+                            </p>
                         </div>
-                        <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
-                        <div class="owl-dots disabled"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-sm-3 px-0">
+                    <div class="item">
+                        <img src="{{ asset('frontend/assets/images/services/icons/promotion_7319392 1.png') }}"
+                            class="img-fluid">
+                        <div class="text">
+                            <h4>Promotional Items​​</h4>
+                            <p>
+                                By choosing the right promotional items and targeting them to the right audience, your
+                                business can see a significant ROI. Generate more leads now with professionally designed
+                                promotional items.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-sm-3 px-0">
+                    <div class="item">
+                        <img src="{{ asset('frontend/assets/images/services/icons/brochure_5459230 1.png') }}"
+                            class="img-fluid">
+                        <div class="text">
+                            <h4>Booth Handouts​​</h4>
+                            <p>
+                                They can highlight your company's unique value. We make sure the designs are informative,
+                                engaging, and memorable to help you achieve your trade show goals easily
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-sm-3 px-0">
+                    <div class="item">
+                        <img src="{{ asset('frontend/assets/images/services/icons/lcd_4436109 1.png') }}" class="img-fluid">
+                        <div class="text">
+                            <h4>Table Displays​​</h4>
+                            <p>
+                                If you are looking to improve your sales efforts, table displays will be the perfect option.
+                                Eye-catching designs will help to attract customers and generate more leads.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-sm-3 px-0">
+                    <div class="item">
+                        <img src="{{ asset('frontend/assets/images/services/icons/monitor_10153826 1.png') }}"
+                            class="img-fluid">
+                        <div class="text">
+                            <h4>Displays & Stands​​​</h4>
+                            <p>
+                                Showcase your brand in a visually appealing and informative way. Draw attention to your
+                                customers now by depending on stunning displays and stand designs for your exhibition.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<br><br><br>
+
+
+    <section class="section service-projects">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2>Our Projects</h2>
+                </div>
+                <p class="col-xl-4 col-lg-6">
+                    We are proud of our work and happy to show our case studies
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 px-sm-3 px-0">
+                    <div class="owl-active-nav">
+                        <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
+
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage"
+                                    style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
+                                    @foreach ($projects as $project)
+                                        <div class="owl-item cloned" style="width: 1050px;">
+                                            <div class="item">
+                                                <img src="{{ url('projects/', $project->image) }}" class="img-fluid"
+                                                    alt="App dashboard" width="1050" height="591">
+                                                <h5>Fashion E-commerce Web site</h5>
+                                            </div>
+                                        </div>
+                                    @endforeach
+
+                                </div>
+                            </div>
+                            <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span
+                                        aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                                    class="owl-next"><span aria-label="Next">›</span></button></div>
+                            <div class="owl-dots disabled"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
