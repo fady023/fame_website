@@ -32,12 +32,21 @@
             </div>
           
              <div class="form-group">
-                <label class="required" for="photo">Logo</label>
+                <label class="required" for="photo">Image</label>
                 <div class="custom-file">
                   <input type="file" name="image" class="custom-file-input" id="imageUploadInput" required>
                   <label class="custom-file-label" for="imageUploadInput">Uplaod</label>
               </div>
             </div>
+            <div class="form-group">
+                    <label for="product-category">Categor <span class="text-danger">*</span></label>
+                    <select class="form-control select2 {{ $errors->has('categoryblog') ? 'is-invalid' : '' }}" name="category" id="category" required>
+                        <option value="Graphic">Graphic</option>
+                        <option value="Branding">Branding</option>
+                        <option value="development">development</option>
+                    </select>
+            </div>
+
             <div class="form-group">
                 <button class="btn btn-danger" type="submit">
                     save

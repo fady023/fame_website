@@ -22,6 +22,7 @@ class Portfolio extends Model
     protected $fillable = [
         'name',
         'image',
+        'category',
     ];
    
 }
