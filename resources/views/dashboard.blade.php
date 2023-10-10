@@ -6,6 +6,14 @@
     <link href="{{asset('assets/libs/selectize/selectize.min.css')}}" rel="stylesheet" type="text/css" />
 @endsection
 
+@php
+    $Projects = DB::table('projects')->count();
+    $Portfolio = DB::table('portfolio')->count();
+
+    $blogs = DB::table('blogs')->count();
+    $qoutes = DB::table('qoutes')->count();
+
+@endphp
 @section('content')
 
     <!-- Start Content-->
@@ -33,8 +41,8 @@
                         </div>
                         <div class="col-6">
                             <div class="text-right">
-                                <h3 class="mt-1"><span data-plugin="counterup">0</span></h3>
-                                <p class="text-muted mb-1 text-truncate"> Developers</p>
+                                <h3 class="mt-1"><span data-plugin="counterup">{{ $Projects }}</span></h3>
+                                <p class="text-muted mb-1 text-truncate"> Projects</p>
                             </div>
                         </div>
                     </div> <!-- end row-->
@@ -51,8 +59,8 @@
                         </div>
                         <div class="col-6">
                             <div class="text-right">
-                                <h3 class="text-dark mt-1"><span data-plugin="counterup">0</span></h3>
-                                <p class="text-muted mb-1 text-truncate"> Projects </p>
+                                <h3 class="text-dark mt-1"><span data-plugin="counterup">{{ $Portfolio }}</span></h3>
+                                <p class="text-muted mb-1 text-truncate"> Portfolio </p>
                             </div>
                         </div>
                     </div> <!-- end row-->
@@ -69,8 +77,8 @@
                         </div>
                         <div class="col-6">
                             <div class="text-right">
-                                <h3 class="text-dark mt-1"><span data-plugin="counterup">0</span></h3>
-                                <p class="text-muted mb-1 text-truncate"> Properties</p>
+                                <h3 class="text-dark mt-1"><span data-plugin="counterup">{{ $blogs }}</span></h3>
+                                <p class="text-muted mb-1 text-truncate"> Blogs</p>
                             </div>
                         </div>
                     </div> <!-- end row-->
@@ -87,8 +95,8 @@
                         </div>
                         <div class="col-6">
                             <div class="text-right">
-                                <h3 class="text-dark mt-1"><span data-plugin="counterup">0</span></h3>
-                                <p class="text-muted mb-1 text-truncate">  Subscriptions</p>
+                                <h3 class="text-dark mt-1"><span data-plugin="counterup">{{ $qoutes }}</span></h3>
+                                <p class="text-muted mb-1 text-truncate">  Qoutes</p>
                             </div>
                         </div>
                     </div> <!-- end row-->
