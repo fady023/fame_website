@@ -1,40 +1,40 @@
  <!-- Start Header -->
     <header class="header js-header-scroll">
         <nav hidden>
-            <div class="nav-header">
-                <a href="#" class="brand">
-                    <img src="{{asset('frontend/assets/brand/logo.png')}}" class="logo" alt="Smooth" />
-                </a>
-                <button class="toggle-bar">
-                    <span class="fa fa-bars"></span>
-                </button>
+            <div class="container-fluid">
+
+                <div class="nav-header">
+                    <a href="#" class="brand">
+                        <img src="{{asset('frontend/assets/brand/logo.png')}}" class="logo" alt="Smooth" />
+                    </a>
+                    <button class="toggle-bar">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                </div>
+                <!-- Start Header menu for mobile -->
+                <div class="header__mobile js-header-menu">
+                    <a href="#" class="header__mobile-brand">Menu</a>
+                    <button class="toggle-bar header__mobile-toggle">
+                        <span class="fa fa-remove"></span>
+                    </button>
+                </div>
+                <!-- End Header menu for mobile -->
+                <ul class="menu">
+                    <li class="active"><a href="/index#home">Home</a></li>
+                    <li><a href="/index#services">Services</a></li>
+                    <li><a href="/index#about">About</a></li>
+                    <li><a href="/index#prtofoilio">Prtofoilio</a></li>
+                    <li><a href="/index#contact">Contact</a></li>
+                    <li><a href="/list_blogs">Blog</a></li>
+                </ul>
+                <!--<ul class="attributes">
+                    <li class="header__button"><a href="https://themeforest.net/user/99webpage/portfolio" class="btn btn-primary btn-rounded btn-xs btn-header">Get a Free Demo Now</a></li>
+                    <li class="header__download-icon"><a href="https://themeforest.net/user/99webpage/portfolio"><i class="fa fa-download"></i></a></li>
+                </ul>-->
+                <ul class="attributes">
+                    <a href="#" class="btn btn-outline">Free consultation</a>
+                </ul>
             </div>
-            <!-- Start Header menu for mobile -->
-            <div class="header__mobile js-header-menu">
-                <a href="#" class="header__mobile-brand">Menu</a>
-                <button class="toggle-bar header__mobile-toggle">
-                    <span class="fa fa-remove"></span>
-                </button>
-            </div>
-            <!-- End Header menu for mobile -->
-            <ul class="menu">
-                <li class="active"><a href="/index#home">Home</a></li>
-                <li><a href="/index#services">Services</a></li>
-                <li><a href="/index#about">About</a></li>
-                <li><a href="/index#prtofoilio">Prtofoilio</a></li>
-                <li><a href="/index#contact">Contact</a></li>
-                <li><a href="/list_blogs">Blog</a></li>
-            </ul>
-            <!--<ul class="attributes">
-                <li class="header__button"><a href="https://themeforest.net/user/99webpage/portfolio" class="btn btn-primary btn-rounded btn-xs btn-header">Get a Free Demo Now</a></li>
-                <li class="header__download-icon"><a href="https://themeforest.net/user/99webpage/portfolio"><i class="fa fa-download"></i></a></li>
-            </ul>-->
-            <ul class="attributes">
-                <li><a href="#" class="footer__widget-network-link"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="footer__widget-network-link"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="footer__widget-network-link"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#" class="footer__widget-network-link"><i class="fa fa-instagram"></i></a></li>
-            </ul>
         </nav>
     </header>
     <!-- End Header -->
