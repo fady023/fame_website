@@ -19,9 +19,12 @@ class IndexController extends Controller
         $phone  = Setting::where('key','site.phone')->value('value');
         $email  = Setting::where('key','site.email')->value('value');
         $address  = Setting::where('key','site.address')->value('value');
-        $Portfolios = Portfolio::orderBy('id', 'DESC')->take(3)->get();
+        $Portfolios = Portfolio::orderBy('id', 'DESC')->get();
+        $Portfolio_Graphic = Portfolio::where('category','Graphic')->orderBy('id', 'DESC')->get();
+        $Portfolio_Branding = Portfolio::where('category','Branding')->orderBy('id', 'DESC')->get();
+        $Portfolio_development = Portfolio::where('category','development')->orderBy('id', 'DESC')->get();
 
-        return view('frontend.index', compact('phone','email','address','Portfolios'));
+        return view('frontend.index', compact('phone','email','address','Portfolios','Portfolio_Graphic','Portfolio_Branding','Portfolio_development'));
     }
 
     public function qoute(){

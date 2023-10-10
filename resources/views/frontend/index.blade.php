@@ -98,22 +98,17 @@
                 <div class="col-lg-4">
                     <div class="item">
                         <h4>PR & Communications​</h4>
-                        <a href="{{ url('/services/prcommunications​') }}">
+                        <a href="{{ url('/services/pr_com') }}">
                             <img src="{{ asset('frontend/assets/images/services/standard-quality-control-collage-concept 2.png') }}"
                                 class="img-fluid zoom" alt="Using Software" />
-                    <div class="section__column section__column-top--left">
-                        <span class="icon icon-paper-plane"></span>
-                        <h4 style="text-align: center;font-size: 14px;">PR & Communications​</h4>
-                         <a href="{{url('/services/pr_com')}}">
-                            <img src="{{asset('frontend/assets/images/services/PRCommunications​.png')}}" class="img-fluid zoom" alt="Using Software" />
-                        </a>
+                    </a>
+                        
                         <p>
                             Deliver your brands message, value and voice easily to your clients NOW with FAME!
                         </p>
                         <div class="section__column-top--left-action">
-                            <a href="{{ url('/services/prcommunications​') }}" class="btn-link btn-primary">Learn More <i
+                            <a href="{{ url('/services/pr_com') }}" class="btn-link btn-primary">Learn More <i
                                     class="fa fa-long-arrow-right"></i></a>
-                            <a href="{{url('/services/pr_com')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -331,10 +326,10 @@
                                         <div class="owl-stage-outer">
                                             <div class="owl-stage"
                                                 style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
-                                                @foreach ($Portfolios as $Portfolio)
+                                                @foreach ($Portfolio_Graphic as $Portfolio_Graphi)
                                                     <div class="owl-item cloned" style="width: 808px;">
                                                         <div class="item">
-                                                            <img src="{{ url('portfolio/', $Portfolio->image) }}"
+                                                            <img src="{{ url('portfolio/', $Portfolio_Graphi->image) }}"
                                                                 class="img-fluid" alt="App dashboard" width="808"
                                                                 height="591">
                                                         </div>
@@ -359,10 +354,10 @@
                                         <div class="owl-stage-outer">
                                             <div class="owl-stage"
                                                 style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
-                                                @foreach ($Portfolios as $Portfolio)
+                                                @foreach ($Portfolio_Branding as $Portfolio_Brandin)
                                                     <div class="owl-item cloned" style="width: 808px;">
                                                         <div class="item">
-                                                            <img src="{{ url('portfolio/', $Portfolio->image) }}"
+                                                            <img src="{{ url('portfolio/', $Portfolio_Brandin->image) }}"
                                                                 class="img-fluid" alt="App dashboard" width="808"
                                                                 height="591">
                                                         </div>
@@ -387,10 +382,10 @@
                                         <div class="owl-stage-outer">
                                             <div class="owl-stage"
                                                 style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
-                                                @foreach ($Portfolios as $Portfolio)
+                                                @foreach ($Portfolio_development as $Portfolio_developmen)
                                                     <div class="owl-item cloned" style="width: 808px;">
                                                         <div class="item">
-                                                            <img src="{{ url('portfolio/', $Portfolio->image) }}"
+                                                            <img src="{{ url('portfolio/', $Portfolio_developmen->image) }}"
                                                                 class="img-fluid" alt="App dashboard" width="808"
                                                                 height="591">
                                                         </div>
@@ -446,7 +441,7 @@
                                 <h4>A Call Back</h4>
                             </div>
                             <div class="col">
-                                <p>Let's explore how we can scale your online business, as our team is here to help.</p>
+                                <p>Lets explore how we can scale your online business, as our team is here to help.</p>
                             </div>
                         </div>
                         <form class="row" method="post" action="{{ route('contact') }}"

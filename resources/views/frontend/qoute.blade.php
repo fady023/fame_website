@@ -41,7 +41,7 @@
                         <h5>Services *</h5>
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input type="checkbox" name="Services" value="Web and Mobile Development"> Web and Mobile Development
+                                <input type="checkbox" name="Services" value="Web and Mobile Development" checked required> Web and Mobile Development
                             </div>
                             <div class="col-md-6 form-group">
                                 <input type="checkbox" name="Services" value="Digital Marketing"> Digital Marketing
@@ -68,27 +68,27 @@
                                 <label style="margin: 17px 0 0 0;">Name <font color="red">*</font></label>
                             </div>
                             <div class="col-md-12">
-                                <input type="text" id="name" name="name" style="width: 70%;background: #fffaee; outline: 0;border-width: 0 0 1px;border-color: #fecd57;">
+                                <input type="text" id="name" name="name" required style="width: 70%;background: #fffaee; outline: 0;border-width: 0 0 1px;border-color: #fecd57;">
                             </div><br>
 
                             <div class="col-md-12">
                                 <label style="margin: 17px 0 0 0;">Company <font color="red">*</font></label>
                             </div>
                             <div class="col-md-12">
-                                <input type="text" id="name" name="company" style="width: 70%;background: #fffaee; outline: 0;border-width: 0 0 1px;border-color: #fecd57;">
+                                <input type="text" id="name" name="company" required style="width: 70%;background: #fffaee; outline: 0;border-width: 0 0 1px;border-color: #fecd57;">
                             </div>
                             <div class="col-md-12">
                                 <label style="margin: 17px 0 0 0;">Phone <font color="red">*</font></label>
                             </div>
                             <div class="col-md-12">
-                                <input type="text" id="name" name="phone" style="width: 70%;background: #fffaee; outline: 0;border-width: 0 0 1px;border-color: #fecd57;">
+                                <input type="text" id="name" name="phone" required style="width: 70%;background: #fffaee; outline: 0;border-width: 0 0 1px;border-color: #fecd57;">
                             </div>
 
                             <div class="col-md-12">
                                 <label style="margin: 17px 0 0 0;">Email Address <font color="red">*</font></label>
                             </div>
                             <div class="col-md-12">
-                                <input type="text" id="name" name="email" style="width: 70%;background: #fffaee; outline: 0;border-width: 0 0 1px;border-color: #fecd57;">
+                                <input type="text" id="name" name="email" required style="width: 70%;background: #fffaee; outline: 0;border-width: 0 0 1px;border-color: #fecd57;">
                             </div>
 
                             <div class="col-md-12 form-action" style="margin: 40px 0 0 0;">

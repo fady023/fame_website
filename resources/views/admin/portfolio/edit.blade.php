@@ -48,6 +48,14 @@
             <div class="img-preview @if(!isset($edit_portfolio->image)) d-none @endif p-2" style="height:100px;border:1px solid #eaeaea">
                 <img src="{{url('portfolio/',$edit_portfolio->image)}}"style="height:100%" />
             </div>
+             <div class="form-group">
+                    <label for="product-category">Categor <span class="text-danger">*</span></label>
+                    <select class="form-control select2 {{ $errors->has('categoryblog') ? 'is-invalid' : '' }}" name="category" id="category" required>
+                        <option value="Graphic" {{($edit_portfolio->category=='Graphic')?' selected':''}}>Graphic</option>
+                        <option value="Branding" {{($edit_portfolio->category=='Branding')?' selected':''}}>Branding</option>
+                        <option value="development" {{($edit_portfolio->category=='development')?' selected':''}}>development</option>
+                    </select>
+            </div>
             <div class="form-group">
                 <button class="btn btn-danger" type="submit">
                     save
