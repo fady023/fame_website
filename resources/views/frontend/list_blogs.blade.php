@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+           <!-- <div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="pagination">
                         <span>
@@ -99,7 +99,7 @@
                         </span>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
     </section>
