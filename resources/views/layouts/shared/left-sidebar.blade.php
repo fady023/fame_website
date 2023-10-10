@@ -60,6 +60,12 @@
                     </li>
                     
                     
+                     <li>        
+                        <a href=" {{route('categoryblogsIndex',['admin','categoryblogs' ,'index']) }}">
+                            <i data-feather="home"></i>
+                            <span>  Category Blog </span>
+                        </a>
+                    </li>
                     <li>        
                         <a href=" {{route('blogsIndex',['admin','blogs' ,'index']) }}">
                             <i data-feather="home"></i>

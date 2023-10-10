@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Add Blog', 'mode' => 'ltr'])
+@extends('layouts.vertical', ['title' => 'Add category Blog', 'mode' => 'ltr'])
 
 @section('css')
     <!-- Plugins css -->
@@ -92,63 +92,27 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="/dashboard">DashBoard</a></li>
-                            <li class="breadcrumb-item active">Add Blog</li>
+                            <li class="breadcrumb-item active">Add Category Blog</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Add / Blog</h4>
+                    <h4 class="page-title">Add / Category Blog</h4>
                 </div>
             </div>
         </div>     
         <!-- end page title --> 
 
-        <form method="POST" action="{{ route('blogsStore',['admin','blogs' ,'store'])  }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('categoryblogsStore',['admin','categoryblogs' ,'store'])  }}" enctype="multipart/form-data">
             @csrf
         <div class="row">
             <div class="col-lg-12">
                 <div class="card-box"> 
                     <div class="form-group mb-3">
-                        <label for="product-name">Title<span class="text-danger">*</span></label>                        
-                        <input class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" type="text" name="title" id="title" value="{{ old('title', '') }}" required>
+                        <label for="product-name">name<span class="text-danger">*</span></label>                        
+                        <input class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" type="text" name="name" id="title" value="{{ old('name', '') }}" required>
                     </div>
 
-                    <div class="form-group mb-3">
-                        <label for="product-description">Description <span class="text-danger">*</span></label>
-                        <textarea class="form-control summernote"  rows="20" name="details"  placeholder="Please enter details" required></textarea>
-                    </div>
-
-
-  <div class="form-group">
-                    <label for="product-category">Categor <span class="text-danger">*</span></label>
-                    <select class="form-control select2 {{ $errors->has('categoryblog') ? 'is-invalid' : '' }}" name="category_id" id="category_id" required>
-                        @foreach($categoryblogs as $categoryblog)
-                            <option value="{{ $categoryblog->id }}">{{ $categoryblog->name }}</option>
-                        @endforeach
-                    </select>
-            </div>
-
-
-
+                  
                 </div> <!-- end card-box -->
-
-                
-           
-
-                <div class="card-box" style="height: 780px;">
-                    <h5 class="text-uppercase mt-0 mb-3 bg-light p-2">Images</h5>
-                    <div class="form-group mb-3">
-                       <div class="upload__box">
-                        <div class="upload__btn-box">
-                            <label class="upload__btn">
-                            <p style=" margin: 0;">Upload images</p>
-                            <input type="file" name="image[]" multiple="" data-max_length="20" class="upload__inputfile">
-                            </label>
-                        </div>
-                        <div class="upload__img-wrap"></div>
-                        </div>
-
-                    </div>
-
-                </div> <!-- end col-->
 
             </div> <!-- end col -->
 

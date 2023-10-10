@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 ///////////////////// Admin ///////////////////////////
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\CategoryBlogController;
 use App\Http\Controllers\Admin\ProjectsController;
 use App\Http\Controllers\Admin\PortfolioController;
 use App\Http\Controllers\Admin\ContactController;
@@ -29,7 +30,7 @@ Route::get('/index', [IndexController::class, 'index'])->name('index');
 Route::get('/services/web_mobile_services', [IndexController::class, 'web_mobile_services'])->name('web_mobile_services');
 Route::get('/services/digital_marketing', [IndexController::class, 'digital_marketing'])->name('digital_marketing');
 Route::get('/services/media_production', [IndexController::class, 'media_production'])->name('media_production');
-Route::get('/services/prcommunications​', [IndexController::class, 'prcommunications​'])->name('prcommunications​');
+Route::get('/services/pr_com', [IndexController::class, 'pr_com'])->name('pr_com');
 Route::get('/services/display_design', [IndexController::class, 'display_design'])->name('display_design');
 Route::get('/services/branding', [IndexController::class, 'branding'])->name('branding');
 Route::get('/services/business_startup', [IndexController::class, 'business_startup'])->name('business_startup');
@@ -78,6 +79,16 @@ Route::group(['prefix'=>'dashboard','middleware'=>['auth','is_admin']],function 
       Route::get('{first}/{second}/{third}/portfolio/destroy/{id}', [PortfolioController::class, 'destroy'])->name('portfoliosDestroy');
       
      
+        //////////////////  Categories Blog ///////////////////
+        Route::get('{first}/{second}/{third}/category', [CategoryBlogController::class, 'index'])->name('categoryblogsIndex');
+        Route::get('{first}/{second}/{third}/category/create', [CategoryBlogController::class, 'create'])->name('categoryblogsCreate');
+        Route::post('{first}/{second}/{third}/category/store', [CategoryBlogController::class, 'store'])->name('categoryblogsStore');
+        Route::get('{first}/{second}/{third}/category/show', [CategoryBlogController::class, 'show'])->name('categoryblogsShow');
+        Route::get('{first}/{second}/{third}/category/edit/{id}', [CategoryBlogController::class, 'edit'])->name('categoryblogsEdit');
+        Route::POST('{first}/{second}/{third}/category/update', [CategoryBlogController::class, 'update'])->name('categoryblogsUpdate');
+        Route::get('{first}/{second}/{third}/category/destroy/{id}', [CategoryBlogController::class, 'destroy'])->name('categoryblogsDestroy');
+
+
          //////////////////  Blog ///////////////////
          Route::get('{first}/{second}/{third}/blogs', [BlogController::class, 'index'])->name('blogsIndex');
          Route::get('{first}/{second}/{third}/blogs/create', [BlogController::class, 'create'])->name('blogsCreate');

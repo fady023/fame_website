@@ -108,7 +108,7 @@
             @csrf
                 <input type="hidden" name="id" value="{{ $edit_Blogs->id }}">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="card-box">
                     <h5 class="text-uppercase bg-light p-2 mt-0 mb-3">General</h5>
  
@@ -121,6 +121,17 @@
                         <label for="product-description">Description <span class="text-danger">*</span></label>
                         <textarea class="form-control summernote"  rows="20" name="details" required> {{ $edit_Blogs->details }} </textarea>
                     </div>
+
+                     <div class="form-group">
+                    <label for="product-category">Developer <span class="text-danger">*</span></label>
+                    <select class="form-control select2 {{ $errors->has('developer') ? 'is-invalid' : '' }}" name="category_id" id="category_id" required>
+                        @foreach($categoryblogs as $categoryblog)
+                    <option value="{{ $categoryblog->id }}" {{($edit_Blogs->category_id==$categoryblog->id)?' selected':''}}>{{ $categoryblog->name }}</option>
+                        @endforeach
+                    </select>
+            </div>
+
+
                 </div> <!-- end card-box -->
 
 

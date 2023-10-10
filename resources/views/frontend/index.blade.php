@@ -101,6 +101,11 @@
                         <a href="{{ url('/services/prcommunications​') }}">
                             <img src="{{ asset('frontend/assets/images/services/standard-quality-control-collage-concept 2.png') }}"
                                 class="img-fluid zoom" alt="Using Software" />
+                    <div class="section__column section__column-top--left">
+                        <span class="icon icon-paper-plane"></span>
+                        <h4 style="text-align: center;font-size: 14px;">PR & Communications​</h4>
+                         <a href="{{url('/services/pr_com')}}">
+                            <img src="{{asset('frontend/assets/images/services/PRCommunications​.png')}}" class="img-fluid zoom" alt="Using Software" />
                         </a>
                         <p>
                             Deliver your brands message, value and voice easily to your clients NOW with FAME!
@@ -108,6 +113,7 @@
                         <div class="section__column-top--left-action">
                             <a href="{{ url('/services/prcommunications​') }}" class="btn-link btn-primary">Learn More <i
                                     class="fa fa-long-arrow-right"></i></a>
+                            <a href="{{url('/services/pr_com')}}" class="btn-link btn-primary">More</a>
                         </div>
                     </div>
                 </div>

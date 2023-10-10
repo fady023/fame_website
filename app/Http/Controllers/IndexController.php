@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\Setting;
 use App\Models\Blog;
+use App\Models\CategoryBlog;
 use Illuminate\Support\Str;
 use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Support\Carbon;
@@ -57,12 +58,12 @@ class IndexController extends Controller
         return view('frontend.services.media_production', compact('phone','email','address','projects'));
     }
 
-    public function prcommunications​(){
+    public function pr_com(){
         $phone  = Setting::where('key','site.phone')->value('value');
         $email  = Setting::where('key','site.email')->value('value');
         $address  = Setting::where('key','site.address')->value('value');
         $projects = Project::orderBy('id', 'DESC')->take(3)->get();
-        return view('frontend.services.prcommunications​', compact('phone','email','address','projects'));
+        return view('frontend.services.pr_com', compact('phone','email','address','projects'));
     }
 
     public function display_design(){
@@ -112,7 +113,10 @@ class IndexController extends Controller
         $address  = Setting::where('key','site.address')->value('value');
        
         $Blogs = Blog::orderBy('id', 'DESC')->get();
-        return view('frontend.list_blogs', compact('phone','email','address','Blogs'));
+
+        $Last_Blogs = Blog::orderBy('id', 'DESC')->take(2)->get();
+        $Categories = CategoryBlog::orderBy('id', 'DESC')->get();
+        return view('frontend.list_blogs', compact('phone','email','address','Blogs','Last_Blogs','Categories'));
     }
     
 

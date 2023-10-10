@@ -11,129 +11,75 @@
                 </div>
                 <div class="col-lg-8 p-0">
                     <div class="list">
+                     @foreach($Blogs as $Blog)
+                        @php
+                            $img = DB::table("blogallery")->where("blog_id",$Blog->id)->first();
+                        @endphp
                         <div class="item">
-                            <img class="img-fluid" src="{{ asset('frontend/assets/images/blog-1.png') }}" />
-
+                            <a href="{{url('blog',$Blog->title)}}">
+                                <img class="img-fluid" src="{{url('blogs/',$img->image)}}" />
+                            </a>
                             <h3>
-                                10 Efficient & Measurable Benefits of Software
+                                {{ $Blog->title }}
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore ...
+                                {{\Illuminate\Support\Str::limit(strip_tags($Blog->details),100)}}
                             </p>
                             <div class="meta">
                                 <div class="meta-item">
-                                    <i class="fa fa-refresh"></i> <span>Sep 22,2023</span>
+                                    <i class="fa fa-refresh"></i> <span> {{ date('d-m-Y', strtotime($Blog->created_at)) }}</span>
                                 </div>
-                                <div class="meta-item">
+                                <!--<div class="meta-item">
                                     <i class="fa fa-comment-o"></i> <span>3</span>
-                                </div>
+                                </div>-->
                             </div>
                             <div class="readMore">
                                 <span>
-                                    Read More
+                                     <a href="{{url('blog',$Blog->title)}}"> Read More </a>
                                 </span>
                                 <i class="fa fa-long-arrow-right"></i>
                             </div>
 
                             <div class="tag tagRed">
-                                Businness
+                                {{ $Blog->category->name }}
                             </div>
                         </div>
-                        <div class="item">
-                            <img class="img-fluid" src="{{ asset('frontend/assets/images/blog-2.png') }}" />
-
-                            <h3>
-                                10 web design principles you can't ignore
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore ...
-                            </p>
-                            <div class="meta">
-                                <div class="meta-item">
-                                    <i class="fa fa-refresh"></i> <span>Sep 22,2023</span>
-                                </div>
-                                <div class="meta-item">
-                                    <i class="fa fa-comment-o"></i> <span>4</span>
-                                </div>
-                            </div>
-                            <div class="readMore">
-                                <span>
-                                    Read More
-                                </span>
-                                <i class="fa fa-long-arrow-right"></i>
-                            </div>
-
-                            <div class="tag tagBlue">
-                                UI/UX
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-fluid" src="{{ asset('frontend/assets/images/blog-3.png') }}" />
-
-                            <h3>
-                                10 web design principles you can't ignore
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore ...
-                            </p>
-                            <div class="meta">
-                                <div class="meta-item">
-                                    <i class="fa fa-refresh"></i> <span>Sep 22,2023</span>
-                                </div>
-                                <div class="meta-item">
-                                    <i class="fa fa-comment-o"></i> <span>5</span>
-                                </div>
-                            </div>
-                            <div class="readMore">
-                                <span>
-                                    Read More
-                                </span>
-                                <i class="fa fa-long-arrow-right"></i>
-                            </div>
-
-                            <div class="tag tagYellow">
-                                Branding
-                            </div>
-                        </div>
+                     
+                      @endforeach
                     </div>
                 </div>
                 <div class="col-lg-3 p-0">
                     <div class="aside">
                         <h4  class="head">Latest Blogs</h4>
-                        <div class="item">
-                            <img class="img-fluid" src="{{ asset('frontend/assets/images/blog-side-1.png') }}" />
-                            <h4>How To Organize Your Workspace</h4>
-                            <div class="meta">May 7, 2023</div>
-                            <div class="tag tagGreen">
-                                Graphic
+                         @foreach($Last_Blogs as $Last_Blog)
+                            <div class="item">
+                             @php
+                                $img = DB::table("blogallery")->where("blog_id",$Last_Blog->id)->first();
+                             @endphp
+                                <img class="img-fluid" src="{{url('blogs/',$img->image)}}" />
+                                <h4><a href="{{url('blog',$Blog->title)}}">{{ $Blog->title }}</a></h4>
+                                <div class="meta">{{ date('d-m-Y', strtotime($Blog->created_at)) }}</div>
+                                <div class="tag tagGreen">
+                                   {{ $Last_Blog->category->name }}
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-fluid" src="{{ asset('frontend/assets/images/blog-side-2.png') }}" />
-                            <h4>How companies can successfully position themselves in stories</h4>
-                            <div class="meta">May 7, 2023</div>
-                            <div class="tag tagPurple">
-                                Startup
-                            </div>
-                        </div>
+                         @endforeach
+
+
                         <h4 class="head mb-3">Categories</h4>
                         <ul class="list">
-                            <li><a href="#">Development (4)</a></li>
-                            <li><a href="#">Digital Marketing (8)</a></li>
-                            <li><a href="#">Media Production (5)</a></li>
-                            <li><a href="#">PR & Communication (5)</a></li>
-                            <li><a href="#">3D Booths & Display Design (7) ​</a></li>
-                            <li><a href="#">Branding (8)</a></li>
-                            <li><a href="#">Business Startup (2)</a></li>
+                            @foreach($Categories as $Categorie)
+                            @php
+                                $count = DB::table('blogs')->where('category_id',$Categorie->id)->count();
+                            @endphp
+                                 <li>{{ $Categorie->name }} ({{ $count  }})</li>
+                            @endforeach
                         </ul>
 
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+           <!-- <div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="pagination">
                         <span>
@@ -153,7 +99,7 @@
                         </span>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
     </section>

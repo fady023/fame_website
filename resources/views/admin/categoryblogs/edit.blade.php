@@ -1,5 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Add Blog', 'mode' => 'ltr'])
-
+@extends('layouts.vertical', ['title' => 'Update Category Blog', 'mode' => 'ltr'])
 @section('css')
     <!-- Plugins css -->
     <link href="{{asset('assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
@@ -7,6 +6,10 @@
     <link href="{{asset('assets/libs/dropzone/dropzone.min.css')}}" rel="stylesheet" type="text/css" />
 
 <style>
+.column {
+  float: left;
+  width: 33.33%;
+}
 .upload__inputfile {
     width: .1px;
     height: .1px;
@@ -92,66 +95,28 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="/dashboard">DashBoard</a></li>
-                            <li class="breadcrumb-item active">Add Blog</li>
+                            <li class="breadcrumb-item active">Update Category Blog</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Add / Blog</h4>
+                    <h4 class="page-title">Update / Category Blog</h4>
                 </div>
             </div>
         </div>     
         <!-- end page title --> 
 
-        <form method="POST" action="{{ route('blogsStore',['admin','blogs' ,'store'])  }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('categoryblogsUpdate',['admin','categoryblogs' ,'update'])  }}" enctype="multipart/form-data">
             @csrf
+                <input type="hidden" name="id" value="{{ $edit_CategoryBlogs->id }}">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card-box"> 
                     <div class="form-group mb-3">
-                        <label for="product-name">Title<span class="text-danger">*</span></label>                        
-                        <input class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" type="text" name="title" id="title" value="{{ old('title', '') }}" required>
+                        <label for="product-name">name<span class="text-danger">*</span></label>                        
+                        <input class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" type="text" name="name" id="title" value="{{ $edit_CategoryBlogs->name }}" required>
                     </div>
-
-                    <div class="form-group mb-3">
-                        <label for="product-description">Description <span class="text-danger">*</span></label>
-                        <textarea class="form-control summernote"  rows="20" name="details"  placeholder="Please enter details" required></textarea>
-                    </div>
-
-
-  <div class="form-group">
-                    <label for="product-category">Categor <span class="text-danger">*</span></label>
-                    <select class="form-control select2 {{ $errors->has('categoryblog') ? 'is-invalid' : '' }}" name="category_id" id="category_id" required>
-                        @foreach($categoryblogs as $categoryblog)
-                            <option value="{{ $categoryblog->id }}">{{ $categoryblog->name }}</option>
-                        @endforeach
-                    </select>
-            </div>
-
-
-
                 </div> <!-- end card-box -->
 
-                
-           
-
-                <div class="card-box" style="height: 780px;">
-                    <h5 class="text-uppercase mt-0 mb-3 bg-light p-2">Images</h5>
-                    <div class="form-group mb-3">
-                       <div class="upload__box">
-                        <div class="upload__btn-box">
-                            <label class="upload__btn">
-                            <p style=" margin: 0;">Upload images</p>
-                            <input type="file" name="image[]" multiple="" data-max_length="20" class="upload__inputfile">
-                            </label>
-                        </div>
-                        <div class="upload__img-wrap"></div>
-                        </div>
-
-                    </div>
-
-                </div> <!-- end col-->
-
             </div> <!-- end col -->
-
         </div>
         <!-- end row -->
 
@@ -172,8 +137,16 @@
 
 @endsection
 
-
 @section('script')
+
+    <!-- Plugins js-->
+    <script src="{{asset('assets/libs/select2/select2.min.js')}}"></script>
+    <script src="{{asset('assets/libs/summernote/summernote.min.js')}}"></script>
+
+    <!-- Page js-->
+    <script src="{{asset('assets/js/pages/form-fileuploads.init.js')}}"></script>
+    <script src="{{asset('assets/js/pages/add-product.init.js')}}"></script>
+
 <script>
 $(document).ready(function() {
   $('.summernote').summernote(
@@ -183,19 +156,6 @@ $(document).ready(function() {
   );
 });
 </script>
-
-
-    <!-- Page js-->
-    <script src="{{asset('assets/js/pages/form-fileuploads.init.js')}}"></script>
-    <script src="{{asset('assets/js/pages/add-product.init.js')}}"></script>
-
-    <!-- Plugins js-->
-    <script src="{{asset('assets/libs/select2/select2.min.js')}}"></script>
-    <script src="{{asset('assets/libs/summernote/summernote.min.js')}}"></script>
-
-    <!-- Page js-->
-    <script src="{{asset('assets/js/pages/form-fileuploads.init.js')}}"></script>
-    <script src="{{asset('assets/js/pages/add-product.init.js')}}"></script>
 
     <script>
     jQuery(document).ready(function () {
@@ -259,20 +219,4 @@ function ImgUpload() {
   });
 }
     </script>
-
-    
 @endsection
-
-
-
-
-
-
-
-
-
-
-
-
-
-

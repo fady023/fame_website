@@ -9,10 +9,10 @@ use Spatie\MediaLibrary\HasMedia\HasMedia;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use Spatie\MediaLibrary\Models\Media;
 
-class Blog extends Model
+class CategoryBlog extends Model
 {
 
-    public $table = 'blogs';
+    public $table = 'categoryblogs';
 
     protected $dates = [
         'created_at',
@@ -20,11 +20,6 @@ class Blog extends Model
     ];
 
     protected $fillable = [
-        'title', 'details','category_id'
+        'name'
     ];
-
-
-    public function category(){
-        return $this->belongsTo(CategoryBlog::class,'category_id','id');
-    }
 }
