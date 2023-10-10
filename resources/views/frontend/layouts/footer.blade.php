@@ -1,24 +1,62 @@
   <!-- Start Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="footer__widget">
-                        <i class="fa fa-map-marker" style="color:#fecd57;font-size:20px;"></i> Address : Yas Mall, Yas Island, Abu Dhabi, UAE.
-                    </div>
+  <footer class="footer">
+      <div class="container-fluid">
+          <div class="row justify-content-between">
+              <div class="col-lg-4">
+                  <div class="footer__widget">
+                      <a href="#" class="brand">
+                          <img src="{{ asset('frontend/assets/images/logo fame marketing 1.png') }}" class="logo" alt="Smooth" />
+                      </a>
+                      <p>We believe in closely partnering with our clients to integrate our expertise and vision into their.</p>
+                      <div class="social">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-behance" aria-hidden="true"></i></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-auto">
+                  <h5>Menu</h5>
+                  <a href="#" class="footer-link">
+                      Home
+                    </a>
+                    <a href="#" class="footer-link">
+                        Services
+                    </a>
+                    <a href="#" class="footer-link">
+                        About
+                    </a>
+                    <a href="#" class="footer-link">
+                        Works
+                    </a>
+                    <a href="#" class="footer-link">
+                        Blog
+                    </a>
+                    <a href="#" class="footer-link">
+                        Contact
+                    </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <div class="footer__widget">
-                        <i class="fa fa-phone" style="color:#fecd57;font-size:20px;"></i> Phone : +971508846800
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer__widget">
-                        <i class="fa fa-envelope" style="color:#fecd57;font-size:20px;"></i> Email : info@fame-marketing.com
-                    </div>
-                </div>
-            </div>
+                      <h5>Info</h5>
+                      <div class="info-item">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Address</strong> :
+                          Yas Mall, Yas Island, Abu Dhabi, UAE.
+                      </div>
+                      <div class="info-item">
+                        <i class="fa fa-phone" aria-hidden="true"></i> <strong>Phone</strong> :
+                          +971508846800
+                      </div>
+                      <div class="info-item">
+                          <i class="fa fa-envelope"></i> <strong>Email</strong> :
+                          info@fame-marketing.com
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-        </div>
-    </footer>
-    <!-- End Footer -->
+      </div>
+  </footer>
+  <!-- End Footer -->
