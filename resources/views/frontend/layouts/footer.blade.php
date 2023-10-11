@@ -2,7 +2,7 @@
   <footer class="footer">
       <div class="container-fluid">
           <div class="row justify-content-between">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-12 mb-3">
                   <div class="footer__widget">
                       <a href="#" class="brand">
                           <img src="{{ asset('frontend/assets/images/logo fame marketing 1.png') }}" class="logo" alt="Smooth" />
@@ -17,7 +17,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-lg-auto">
+              <div class="col-lg-auto col-sm-3 mb-3">
                   <h5>Menu</h5>
                   <a href="#" class="footer-link">
                       Home
@@ -38,7 +38,7 @@
                         Contact
                     </a>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 col mb-3">
                     <div class="footer__widget">
                       <h5>Info</h5>
                       <div class="info-item">

@@ -3,13 +3,14 @@
 @section('content')
 
     <!-- Start Masthead -->
-    <section class="masthead js-masthead-height pb-0" id="home">
+    <section class="masthead js-masthead-height pb-0 " id="home">
         {{-- <div class="masthead__style-overlay"></div> --}}
         <div class="masthead__style-watter">
             <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="masthead__content masthead__content-mtop">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-sm-10" data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000"
+                        data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                        <div class="masthead__content masthead__content-mtop ">
                             <h1>We are a full marketing services provider</h1>
                             <p>
                                 In such <span>fast-paced</span> evolving marketplace, we are <span>committed to</span>
@@ -22,7 +23,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-6 col-sm-8 text-center" data-aos-offset="0" data-aos="fade-left"
+                        data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                         <div class="masthead__style-watter--image">
                             <div class="masthead__style-watter--icon flyIn">
                                 <img src="{{ asset('frontend/assets/images/Group 13 2.png') }}" class="img-fluid"
@@ -42,13 +44,15 @@
     <section class="section pb-0 home-services" id="services">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" data-aos-offset="0" data-aos="zoom-in" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <h2>Our Services</h2>
                     <p>​We cannot wait to get you all “<span>Famed</span>” up!</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Web & Mobile Services</h4>
                         <a href="{{ url('/services/web_mobile_services') }}">
@@ -62,7 +66,8 @@
                                 class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Digital Marketing</h4>
                         <a href="{{ url('/services/digital_marketing') }}">
@@ -78,7 +83,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Media Production</h4>
                         <a href="{{ url('/services/media_production') }}">
@@ -95,14 +101,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-left"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>PR & Communications​</h4>
                         <a href="{{ url('/services/pr_com') }}">
                             <img src="{{ asset('frontend/assets/images/services/standard-quality-control-collage-concept 2.png') }}"
                                 class="img-fluid zoom" alt="Using Software" />
-                    </a>
-                        
+                        </a>
+
                         <p>
                             Deliver your brands message, value and voice easily to your clients NOW with FAME!
                         </p>
@@ -112,7 +119,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-left"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>3D Booths & Display Design ​​</h4>
                         <a href="{{ url('/services/display_design') }}">
@@ -130,7 +138,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-left"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Branding ​​</h4>
                         <a href="{{ url('/services/branding') }}">
@@ -147,7 +156,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Business Startup ​​</h4>
                         <a href="{{ url('/services/business_startup') }}">
@@ -172,22 +182,26 @@
         <div class="container-fluid">
 
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" data-aos-offset="0" data-aos="fade-down" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <h2>Our Certifications</h2>
                 </div>
             </div>
             <div class="row justify-content-around">
-                <div class="col-lg-auto">
+                <div class="col-md-auto col-sm-4 col" data-aos-offset="0" data-aos-delay="100" data-aos="zoom-in"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="section__column text-center">
                         <img src="{{ asset('frontend/assets/images/01.png') }}" class="icon-lg" alt="Using Software" />
                     </div>
                 </div>
-                <div class="col-lg-auto">
+                <div class="col-md-auto col-sm-4 col" data-aos-offset="0" data-aos-delay="200" data-aos="zoom-in"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="section__column text-center">
                         <img src="{{ asset('frontend/assets/images/02.png') }}" class="icon-lg" alt="Using Software" />
                     </div>
                 </div>
-                <div class="col-lg-auto">
+                <div class="col-md-auto col-sm-4 col" data-aos-offset="0" data-aos-delay="300" data-aos="zoom-in"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="section__column text-center">
                         <img src="{{ asset('frontend/assets/images/03.png') }}" class="icon-lg" alt="Using Software" />
                     </div>
@@ -197,8 +211,9 @@
     </section>
     <section class="section home-about" id="about">
         <div class="container-fluid">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6 mb-40">
+            <div class="row justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-lg-6 col-xs-12" data-aos-offset="0" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <h2>About Us</h2>
                     <p>
                         Fame is a full marketing services provider supporting businesses of all sizes and domains in the
@@ -208,7 +223,8 @@
                     </p>
 
                 </div>
-                <div class="col-lg-6 mb-40">
+                <div class="col-lg-6 col-sm-8 " data-aos-offset="0" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <img src="{{ asset('frontend/assets/images/Group 1732.png') }}" class="img-fluid"
                         alt="Business Man with Laptop">
                 </div>
@@ -218,12 +234,14 @@
 
     <section class="section home-vision">
         <div class="container-fluid">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6 mb-40">
+            <div class="row justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2 col-sm-8" data-aos-offset="0" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <img src="{{ asset('frontend/assets/images/Group 1733.png') }}" class="img-fluid"
                         alt="Business Man with Laptop" width="389" height="391">
                 </div>
-                <div class="col-lg-5 offset-lg-1 mb-40">
+                <div class="col-lg-6 col-xs-12 order-lg-2 order-1" data-aos-offset="0" data-aos="fade-left"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <h2>Vision and Mission </h2>
                     <p>
                         Our vision is to become the GCC’s marketing services provider of choice for brands that want to
@@ -245,7 +263,8 @@
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
 
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-12" data-aos-offset="0" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <h2>Our Portfolio </h2>
                     <p>
                         We LOVE to connect BRANDS with PEOPLE.<br>
@@ -254,29 +273,37 @@
                     </p>
 
                 </div>
-                <div class="col-lg-auto mb-40">
+                <div class="col-lg-auto col-12 mb-40">
 
                     <div class="gallery__filter">
                         <ul class="nav nav-tabs gallery__filter--list" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
+                            <li class="nav-item" role="presentation" data-aos-delay="0" data-aos-offset="0"
+                                data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out"
+                                data-aos-anchor-placement="top-center">
                                 <button class="nav-link active gallery__filter--list-link" id="all-tab"
                                     data-toggle="tab" data-target="#all" type="button" role="tab"
                                     aria-controls="all" aria-selected="true">All</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link gallery__filter--list-link" id="graphic-tab"
-                                    data-toggle="tab" data-target="#graphic" type="button" role="tab"
-                                    aria-controls="graphic" aria-selected="true">Graphic</button>
+                            <li class="nav-item" role="presentation" data-aos-delay="100" data-aos-offset="0"
+                                data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out"
+                                data-aos-anchor-placement="top-center">
+                                <button class="nav-link gallery__filter--list-link" id="graphic-tab" data-toggle="tab"
+                                    data-target="#graphic" type="button" role="tab" aria-controls="graphic"
+                                    aria-selected="true">Graphic</button>
                             </li>
-                            <li class="nav-item" role="presentation">
+                            <li class="nav-item" role="presentation" data-aos-delay="200" data-aos-offset="0"
+                                data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out"
+                                data-aos-anchor-placement="top-center">
                                 <button class="nav-link gallery__filter--list-link" id="branding-tab" data-toggle="tab"
                                     data-target="#branding" type="button" role="tab" aria-controls="branding"
                                     aria-selected="false">Branding</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link gallery__filter--list-link" id="development-tab" data-toggle="tab"
-                                    data-target="#development" type="button" role="tab" aria-controls="development"
-                                    aria-selected="false">development</button>
+                            <li class="nav-item" role="presentation" data-aos-delay="400" data-aos-offset="0"
+                                data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out"
+                                data-aos-anchor-placement="top-center">
+                                <button class="nav-link gallery__filter--list-link" id="development-tab"
+                                    data-toggle="tab" data-target="#development" type="button" role="tab"
+                                    aria-controls="development" aria-selected="false">development</button>
                             </li>
                         </ul>
 
@@ -285,7 +312,8 @@
             </div>
 
 
-            <div class="gallery__content">
+            <div class="gallery__content" data-aos-offset="0" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="tab-content" id="myTabContent">
@@ -318,8 +346,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="graphic" role="tabpanel"
-                                aria-labelledby="graphic-tab">
+                            <div class="tab-pane fade" id="graphic" role="tabpanel" aria-labelledby="graphic-tab">
                                 <div class="owl-active-nav">
                                     <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
 
@@ -375,7 +402,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="development" role="tabpanel" aria-labelledby="development-tab">
+                            <div class="tab-pane fade" id="development" role="tabpanel"
+                                aria-labelledby="development-tab">
                                 <div class="owl-active-nav">
                                     <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
 
@@ -417,12 +445,14 @@
 
     <section class="section home-contact">
         <div class="container-fluid">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6">
-                    <img src="{{ asset('frontend/assets/images/SmartObject 1.png') }}" class="img-fluid">
+            <div class="row justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-lg-6 col-sm-8 order-lg-1 order-2" data-aos-offset="0" data-aos="fade-right" data-aos-duration="1000"
+                data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                    <img src="{{ asset('frontend/assets/images/contact (1).png') }}" class="img-fluid">
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12 order-lg-2 order-1" data-aos-offset="0" data-aos="fade-left" data-aos-duration="1000"
+                data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="row">
                         <div class="col-12">
                             <h2>Get in touch</h2>

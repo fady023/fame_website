@@ -10,33 +10,45 @@
     <meta name="keywords" content="{{ $keywords }}">
 
 
-    <link rel="icon" type="image/png" href="{{asset('frontend/favicon/smooth-favicon-16x16.png')}}" sizes="16x16">
-    <link rel="icon" type="image/png" href="{{asset('frontend/favicon/smooth-favicon-32x32.png')}}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{asset('frontend/favicon/smooth-favicon-144x144.png')}}" sizes="144x144">
-    <link rel="icon" type="image/png" href="{{asset('frontend/favicon/smooth-favicon-196x196.png')}}" sizes="196x196">
+    <link rel="icon" type="image/png" href="{{ asset('frontend/favicon/smooth-favicon-16x16.png') }}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ asset('frontend/favicon/smooth-favicon-32x32.png') }}"
+        sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ asset('frontend/favicon/smooth-favicon-144x144.png') }}"
+        sizes="144x144">
+    <link rel="icon" type="image/png" href="{{ asset('frontend/favicon/smooth-favicon-196x196.png') }}"
+        sizes="196x196">
 
-    <link rel="apple-touch-icon" href="{{asset('frontend/favicon/smooth-favicon-196x196.png')}}">
-      <!-- Template stylesheet -->
-    <link rel="stylesheet" href="{{asset('frontend/assets/css/style.min.css')}}">
+    <link rel="apple-touch-icon" href="{{ asset('frontend/favicon/smooth-favicon-196x196.png') }}">
+    <!-- Template stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.min.css') }}">
 </head>
 
 <body>
     @include('frontend.layouts.header')
     @include('frontend.layouts.message')
 
-    @show
-    @yield('content')
-    @include('frontend.layouts.footer')
+@show
+@yield('content')
+@include('frontend.layouts.footer')
 
 
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{asset('frontend/assets/js/jquery.min.js')}}"></script>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ asset('frontend/assets/js/jquery.min.js') }}"></script>
 
-    <!-- Template main JavaScript -->
-    <script src="{{asset('frontend/assets/js/main.min.js')}}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Template custome JavaScript -->
-    <script src="{{asset('frontend/assets/js/scripts.min.js')}}"></script>
+<!-- Template main JavaScript -->
+<script src="{{ asset('frontend/assets/js/main.min.js') }}"></script>
+
+<!-- Template custome JavaScript -->
+<script src="{{ asset('frontend/assets/js/scripts.min.js') }}"></script>
+<script>
+    $(document).ready(function() {
+
+        AOS.init();
+    })
+</script>
 </body>
 
 </html>
