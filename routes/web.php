@@ -40,6 +40,8 @@ Route::get('/qoute', [IndexController::class, 'qoute'])->name('qoute');
 Route::post('qoutes', [IndexController::class, 'qoutes'])->name('qoutes');
 Route::post('contact', [IndexController::class, 'contact'])->name('contact');
 
+Route::get('/consultation', [IndexController::class, 'consultation'])->name('consultation');
+
 
 
 /*Route::get('/details/{name}', [IndexController::class, 'details'])->name('details');*/

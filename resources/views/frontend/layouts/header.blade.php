@@ -32,7 +32,7 @@
                     <li class="header__download-icon"><a href="https://themeforest.net/user/99webpage/portfolio"><i class="fa fa-download"></i></a></li>
                 </ul>-->
                 <ul class="attributes">
-                    <a href="#" class="btn btn-outline">Free consultation</a>
+                    <a href="/consultation" class="btn btn-outline">Free consultation</a>
                 </ul>
             </div>
         </nav>

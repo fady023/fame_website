@@ -35,6 +35,14 @@ class IndexController extends Controller
         return view('frontend.qoute', compact('phone','email','address'));
     }
 
+    public function consultation(){
+        $phone  = Setting::where('key','site.phone')->value('value');
+        $email  = Setting::where('key','site.email')->value('value');
+        $address  = Setting::where('key','site.address')->value('value');
+
+        return view('frontend.consultation', compact('phone','email','address'));
+    }
+    
     
     public function web_mobile_services(){
         $phone  = Setting::where('key','site.phone')->value('value');
