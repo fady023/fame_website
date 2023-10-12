@@ -178,37 +178,7 @@
         </div>
     </section>
 
-    <section class="section home-certifications">
-        <div class="container-fluid">
-
-            <div class="row">
-                <div class="col-12" data-aos-offset="0" data-aos="fade-down" data-aos-duration="1000"
-                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
-                    <h2>Our Certifications</h2>
-                </div>
-            </div>
-            <div class="row justify-content-around">
-                <div class="col-md-auto col-sm-4 col" data-aos-offset="0" data-aos-delay="100" data-aos="zoom-in"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
-                    <div class="section__column text-center">
-                        <img src="{{ asset('frontend/assets/images/01.png') }}" class="icon-lg" alt="Using Software" />
-                    </div>
-                </div>
-                <div class="col-md-auto col-sm-4 col" data-aos-offset="0" data-aos-delay="200" data-aos="zoom-in"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
-                    <div class="section__column text-center">
-                        <img src="{{ asset('frontend/assets/images/02.png') }}" class="icon-lg" alt="Using Software" />
-                    </div>
-                </div>
-                <div class="col-md-auto col-sm-4 col" data-aos-offset="0" data-aos-delay="300" data-aos="zoom-in"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
-                    <div class="section__column text-center">
-                        <img src="{{ asset('frontend/assets/images/03.png') }}" class="icon-lg" alt="Using Software" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <section class="section home-about" id="about">
         <div class="container-fluid">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
