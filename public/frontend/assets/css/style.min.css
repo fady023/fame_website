@@ -787,8 +787,8 @@ pre code {
 .col-xl-auto {
     position: relative;
     width: 100%;
-    padding-right: 41px;
-    padding-left: 41px
+    padding-right: 15px;
+    padding-left: 15px
 }
 
 .col {
@@ -11386,9 +11386,10 @@ a.text-dark:hover {
 
 .core-nav .wrap-core-nav-list .core-nav-list {
     display: inline-block;
-    margin: 0 0 -5px;
+    margin: 0 46px -5px 0;
     padding: 0;
-    list-style: none
+    list-style: none;
+    float: right;
 }
 
 .core-nav .wrap-core-nav-list .core-nav-list li {
@@ -19011,6 +19012,7 @@ screen and (max-height:300px) {
 
 .header .menu li {
     padding: 40px 0;
+    position: relative;
 }
 
 .header .menu li a {
@@ -19024,7 +19026,27 @@ screen and (max-height:300px) {
     padding: 6px 16px;
 }
 
-.header .menu li a:hover {
+.header .menu li .dropdown-menu {
+    border-radius: 8px;
+    border-top: 2px solid #FECD57;
+}
+
+.header .menu li .dropdown-menu .dropdown-item {
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.header .menu li:hover .dropdown-menu {
+    top: 80%;
+    display: block;
+    transition: all 0.25s linear;
+}
+
+.header .menu li:not(.active) a:hover {
     color: #FECD57
 }
 
@@ -20168,7 +20190,7 @@ screen and (max-height:300px) {
 .footer h5 {
     font-family: Avenir;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 28px;
     letter-spacing: 0em;
     color: #fff;
@@ -20192,7 +20214,7 @@ screen and (max-height:300px) {
     margin-bottom: 20px;
     font-family: Avenir;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 25px;
     letter-spacing: 0em;
     color: #C9C9C9;
@@ -20372,21 +20394,6 @@ screen and (max-height:300px) {
     margin-bottom: 40px
 }
 
-@media (max-width:991px) {
-    .aside__right {
-        padding-left: 0;
-        margin-top: 40px
-    }
-
-    .aside__left {
-        padding-right: 0;
-        margin-top: 40px
-    }
-
-    .aside__widget {
-        margin-bottom: 20px
-    }
-}
 
 .aside__widget-title {
     position: relative;
@@ -23666,13 +23673,6 @@ button:hover {
         margin-bottom: 10px
     }
 
-    .contact__aside {
-        text-align: left;
-        padding: 30px 30px 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        height: auto
-    }
 }
 
 .contact__aside--content {
@@ -23718,11 +23718,6 @@ button:hover {
     .contact__aside--widget::after {
         right: auto;
         left: 0
-    }
-
-    .contact__aside--widget-title {
-        padding-right: 0;
-        padding-left: 25px
     }
 }
 
@@ -24862,14 +24857,14 @@ button:hover {
 }
 
 .service-head {
-    padding-top: 150px;
+    padding-top: 150px !important;
     padding-bottom: 60px;
 }
 
 .service-head h2 {
     font-family: Avenir;
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 75px;
     letter-spacing: 0em;
     text-align: left;
@@ -24910,12 +24905,25 @@ button:hover {
 .service-details h2 {
     font-family: Avenir;
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 67px;
     letter-spacing: 0em;
     text-align: center;
     color: #2C2D2D;
+    position: relative;
     margin-bottom: 60px;
+}
+
+.service-details h2:after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    bottom: -8px;
+    left: 50%;
+    background-image: url(../images/header-after.png);
+    position: absolute;
+    transform: translateX(-50%);
+
 }
 
 .service-details .item {
@@ -24924,6 +24932,9 @@ button:hover {
 }
 
 .service-details .item img {
+    background-color: #FFFAEE;
+    padding: 10px;
+    border-radius: 8px;
     display: inline-block;
     width: 67px;
     height: 67px;
@@ -24938,7 +24949,7 @@ button:hover {
 .service-details .item .text h4 {
     font-family: Avenir;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 31px;
     letter-spacing: 0em;
     color: #2C2D2D;
@@ -24961,12 +24972,25 @@ button:hover {
 .service-projects h2 {
     font-family: Avenir;
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 67px;
     letter-spacing: 0em;
     text-align: center;
     color: #2C2D2D;
     margin: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+.service-projects h2:after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    bottom: -8px;
+    left: 50%;
+    background-image: url(../images/header-after.png);
+    position: absolute;
+    transform: translateX(-50%);
+
 }
 
 .service-projects p {
@@ -25033,7 +25057,7 @@ button:hover {
 
 @media screen and (max-width: 1199px) {
     .service-head {
-        padding-top: 90px;
+        padding-top: 120px !important;
     }
 
     .service-head h2 {
@@ -25151,6 +25175,7 @@ button:hover {
 }
 
 .btn-outline {
+    font-family: Avenir;
     border: 1px solid #FECD57;
     background-color: #FFFAEE;
     padding: 10px 30px 10px 30px;
@@ -25160,6 +25185,7 @@ button:hover {
 }
 
 .btn-outline-lg {
+    font-family: Avenir;
     border: 1px solid #FECD57;
     background-color: #FFFAEE;
     padding: 15px 60px 15px 60px;
@@ -25171,7 +25197,7 @@ button:hover {
 .masthead h1 {
     font-family: Avenir;
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 56px;
     letter-spacing: 0em;
     color: #000000;
@@ -25194,7 +25220,7 @@ button:hover {
     text-align: center;
     font-family: Avenir;
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 67px;
     letter-spacing: 0em;
     position: relative;
@@ -25269,7 +25295,7 @@ button:hover {
     text-decoration: underline;
     font-family: Avenir;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 22px;
     letter-spacing: 0em;
 
@@ -25293,7 +25319,7 @@ button:hover {
     text-align: center;
     font-family: Avenir;
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 67px;
     letter-spacing: 0em;
     position: relative;
@@ -25320,7 +25346,7 @@ button:hover {
     text-align: start;
     font-family: Avenir;
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 67px;
     letter-spacing: 0em;
     position: relative;
@@ -25353,7 +25379,7 @@ button:hover {
     text-align: start;
     font-family: Avenir;
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 67px;
     letter-spacing: 0em;
     position: relative;
@@ -25386,7 +25412,7 @@ button:hover {
     text-align: start;
     font-family: Avenir;
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 67px;
     letter-spacing: 0em;
     position: relative;
@@ -25463,7 +25489,7 @@ button:hover {
     text-align: start;
     font-family: Avenir;
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 67px;
     letter-spacing: 0em;
     position: relative;
@@ -25656,8 +25682,8 @@ button:hover {
     .col-xl-8,
     .col-xl-9,
     .col-xl-auto {
-        padding-right: 16px;
-        padding-left: 16px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 
@@ -25769,4 +25795,107 @@ button:hover {
     line-height: 22px;
     letter-spacing: 0em;
     color: #929292;
+}
+
+.qoute .contact__main form {
+    padding: 10px;
+}
+
+.qoute .contact__main form .input-label {
+    margin: 0;
+    display: block;
+    margin-top: 24px;
+}
+
+.qoute .contact__main form label span {
+    color: #FA4C45;
+
+}
+
+.qoute .contact__main form input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FECD57;
+    outline: none;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+@media screen and (max-width: 575px) {
+    .qoute .contact__main h1 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .qoute .contact__main h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .contact__aside {
+        padding: 0px;
+    }
+
+    .qoute .contact__main h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .qoute .contact__main p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .qoute .contact__main form input[type="text"] {
+        width: 100%;
+    }
+}
+
+.qoutation-message {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.qoutation-message .messsage {
+    margin: 0 auto;
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.qoutation-message .messsage img {
+    width: 186px;
+}
+
+.qoutation-message .messsage p {
+    font-family: Avenir;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 47px;
+    letter-spacing: 0em;
+    color: #2C2D2D;
+    margin-bottom: 30px;
+}
+
+.qoutation-message .messsage span {
+    color: #E3B84F;
+    font-weight: 600;
+}
+.qoutation-message .messsage .btn-primary {
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 575px) {
+    .qoutation-message .messsage p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+}
+
+footer .partners img {
+    width: 140px;
+    max-width: 100%;
+    object-fit: contain;
 }
