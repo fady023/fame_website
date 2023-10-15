@@ -30,16 +30,19 @@
                                         <h5 class="contact__aside--widget-title">Project Overview <span>*</span>
                                         </h5>
                                         <p>Can you provide a brief overview of your company and the specific marketing project or campaign you have in mind?</p>
+                                        <input type="text" required >
                                     </div>
                                     <div class="contact__aside--widget">
                                         <h5 class="contact__aside--widget-title"> Project Goals <span>*</span>
                                         </h5>
                                         <p>What are your primary goals and objectives for this marketing project? What results are you hoping to achieve?</p>
+                                        <input type="text" required >
                                     </div>
                                     <div class="contact__aside--widget mb-0">
                                         <h5 class="contact__aside--widget-title"> Target Audience <span>*</span>
                                         </h5>
                                         <p>Who is your target audience or ideal customer for this project? Do you have specific demographics or people in mind?</p>
+                                        <input type="text" required >
                                     </div>
                                 </div>
                             </div>
@@ -100,7 +103,7 @@
                             </div>
 
                             <div class="col-md-12 form-action" style="margin: 40px 0 0 0;">
-                                <button type="submit" class="btn btn-primary btn-rounded">Request a demo</button>
+                                <button type="submit" class="btn btn-primary btn-rounded">Request Consultation</button>
                             </div>
                             <br><br><br><br><br><br>
 
