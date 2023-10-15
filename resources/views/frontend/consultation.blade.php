@@ -10,7 +10,7 @@
                     Thanks for your trust of us we will contact you <span>as soon as possible<span>
                 </p>
                 <div class="btn btn-primary">
-                    Return to our website
+                    <a href="{{ url('/index') }}"> Return to our website</a>
                 </div>
             </div>
         </div>
