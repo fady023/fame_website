@@ -310,7 +310,7 @@
                                 <div class="swiper-2 swiper">
                                     <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper">
-                                        @foreach ($Portfolios as $Portfolio)
+                                        @foreach ($Portfolio_Graphic as $Portfolio)
                                             <div class="swiper-slide">
                                                 <div class="item">
                                                     <img src="{{ url('portfolio/', $Portfolio->image) }}"
@@ -328,7 +328,7 @@
                                 <div class="swiper-3 swiper">
                                     <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper">
-                                        @foreach ($Portfolios as $Portfolio)
+                                        @foreach ($Portfolio_Branding as $Portfolio)
                                             <div class="swiper-slide">
                                                 <div class="item">
                                                     <img src="{{ url('portfolio/', $Portfolio->image) }}"
@@ -347,7 +347,7 @@
                                 <div class="swiper-4 swiper">
                                     <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper">
-                                        @foreach ($Portfolios as $Portfolio)
+                                        @foreach ($Portfolio_development as $Portfolio)
                                             <div class="swiper-slide">
                                                 <div class="item">
                                                     <img src="{{ url('portfolio/', $Portfolio->image) }}"

@@ -169,7 +169,12 @@ class IndexController extends Controller
     {
         //dd($request->all());
         Qoute::create($request->all());
-        return back()->with('message', 'Submit Qoute for review');
+        $phone  = Setting::where('key','site.phone')->value('value');
+        $email  = Setting::where('key','site.email')->value('value');
+        $address  = Setting::where('key','site.address')->value('value');
+        return view('frontend.consultation', compact('phone','email','address'));
+
+        //return back()->with('message', 'Submit Qoute for review');
     }
     
     

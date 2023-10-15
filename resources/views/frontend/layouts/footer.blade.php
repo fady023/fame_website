@@ -9,11 +9,11 @@
                         </a>
                         <p>We believe in closely partnering with our clients to integrate our expertise and vision into their.</p>
                         <div class="social">
-                            <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                            <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-                            <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                            <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
-                            <span><i class="fa fa-behance" aria-hidden="true"></i></span>
+                            <span><a href="https://www.linkedin.com/company/fame-marketing-services/" style="color:#fff"><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+                            <span><a href="https://twitter.com/FameMarketingAE" style="color:#fff"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                            <span><a href="https://www.facebook.com/Famemarketingservices" style="color:#fff"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                            <span><a href="https://www.instagram.com/famemarketingservices" style="color:#fff"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                            <span><a href="#" style="color:#fff"><i class="fa fa-behance" aria-hidden="true"></i></a></span>
                         </div>
                     </div>
                     <div class="footer__widget partners">
@@ -39,22 +39,22 @@
               </div>
               <div class="col-lg-auto col-sm-3 mb-3">
                   <h5>Menu</h5>
-                  <a href="#" class="footer-link">
+                  <a href="/index#home" class="footer-link">
                       Home
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="/index#services" class="footer-link">
                         Services
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="/index#about" class="footer-link">
                         About
                     </a>
-                    <a href="#" class="footer-link">
-                        Works
+                   <a href="/index#prtofoilio" class="footer-link">
+                        Prtofoilio
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="/list_blogs" class="footer-link">
                         Blog
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="/index#contact" class="footer-link">
                         Contact
                     </a>
                 </div>
