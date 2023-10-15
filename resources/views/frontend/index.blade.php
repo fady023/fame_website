@@ -26,7 +26,7 @@
                     <div class="col-lg-6 col-sm-8 text-center" data-aos-offset="0" data-aos="fade-left"
                         data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                         <div class="masthead__style-watter--image">
-                            <div class="masthead__style-watter--icon flyIn">
+                            <div class="masthead__style-watter--icon">
                                 <img src="{{ asset('frontend/assets/images/Group 13 2.png') }}" class="img-fluid"
                                     alt="Icon" />
                             </div>
@@ -51,8 +51,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-right"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Web & Mobile Services</h4>
                         <a href="{{ url('/services/web_mobile_services') }}">
@@ -66,8 +66,8 @@
                                 class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-right"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Digital Marketing</h4>
                         <a href="{{ url('/services/digital_marketing') }}">
@@ -83,8 +83,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-right"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Media Production</h4>
                         <a href="{{ url('/services/media_production') }}">
@@ -101,8 +101,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-left"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>PR & Communications​</h4>
                         <a href="{{ url('/services/pr_com') }}">
@@ -119,8 +119,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-left"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>3D Booths & Display Design ​​</h4>
                         <a href="{{ url('/services/display_design') }}">
@@ -138,8 +138,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-left"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Branding ​​</h4>
                         <a href="{{ url('/services/branding') }}">
@@ -156,8 +156,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-up"
-                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                <div class="col-lg-4 col-sm-6" data-aos-offset="0" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="item">
                         <h4>Business Startup ​​</h4>
                         <a href="{{ url('/services/business_startup') }}">
@@ -178,7 +178,7 @@
         </div>
     </section>
 
-    
+
     <section class="section home-about" id="about">
         <div class="container-fluid">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
@@ -229,7 +229,7 @@
         </div>
     </section>
 
-    <section class="section home-portfolio">
+    <section class="section home-portfolio" id="prtofoilio">
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
 
@@ -289,117 +289,77 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="all" role="tabpanel"
                                 aria-labelledby="graphic-tab">
-                                <div class="owl-active-nav">
-                                    <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
-
-                                        <div class="owl-stage-outer">
-                                            <div class="owl-stage"
-                                                style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
-                                                @foreach ($Portfolios as $Portfolio)
-                                                    <div class="owl-item cloned" style="width: 808px;">
-                                                        <div class="item">
-                                                            <img src="{{ url('portfolio/', $Portfolio->image) }}"
-                                                                class="img-fluid" alt="App dashboard" width="808"
-                                                                height="591">
-                                                        </div>
-                                                    </div>
-                                                @endforeach
-
+                                <div class="swiper-1 swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        @foreach ($Portfolios as $Portfolio)
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <img src="{{ url('portfolio/', $Portfolio->image) }}"
+                                                        class="img-fluid" alt="App dashboard" width="808"
+                                                        height="591">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="owl-nav"><button type="button" role="presentation"
-                                                class="owl-prev"><span aria-label="Previous">‹</span></button><button
-                                                type="button" role="presentation" class="owl-next"><span
-                                                    aria-label="Next">›</span></button>
-                                        </div>
-                                        <div class="owl-dots disabled"></div>
+                                        @endforeach
                                     </div>
                                 </div>
+                                <div class="swiper-button-prev prev-1"></div>
+                                <div class="swiper-button-next next-1"></div>
                             </div>
                             <div class="tab-pane fade" id="graphic" role="tabpanel" aria-labelledby="graphic-tab">
-                                <div class="owl-active-nav">
-                                    <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
-
-                                        <div class="owl-stage-outer">
-                                            <div class="owl-stage"
-                                                style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
-                                                @foreach ($Portfolio_Graphic as $Portfolio_Graphi)
-                                                    <div class="owl-item cloned" style="width: 808px;">
-                                                        <div class="item">
-                                                            <img src="{{ url('portfolio/', $Portfolio_Graphi->image) }}"
-                                                                class="img-fluid" alt="App dashboard" width="808"
-                                                                height="591">
-                                                        </div>
-                                                    </div>
-                                                @endforeach
-
+                                <div class="swiper-2 swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        @foreach ($Portfolios as $Portfolio)
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <img src="{{ url('portfolio/', $Portfolio->image) }}"
+                                                        class="img-fluid" alt="App dashboard" width="808"
+                                                        height="591">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="owl-nav"><button type="button" role="presentation"
-                                                class="owl-prev"><span aria-label="Previous">‹</span></button><button
-                                                type="button" role="presentation" class="owl-next"><span
-                                                    aria-label="Next">›</span></button>
-                                        </div>
-                                        <div class="owl-dots disabled"></div>
+                                        @endforeach
                                     </div>
                                 </div>
+                                <div class="swiper-button-prev prev-2"></div>
+                                <div class="swiper-button-next next-2"></div>
                             </div>
                             <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
-                                <div class="owl-active-nav">
-                                    <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
-
-                                        <div class="owl-stage-outer">
-                                            <div class="owl-stage"
-                                                style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
-                                                @foreach ($Portfolio_Branding as $Portfolio_Brandin)
-                                                    <div class="owl-item cloned" style="width: 808px;">
-                                                        <div class="item">
-                                                            <img src="{{ url('portfolio/', $Portfolio_Brandin->image) }}"
-                                                                class="img-fluid" alt="App dashboard" width="808"
-                                                                height="591">
-                                                        </div>
-                                                    </div>
-                                                @endforeach
-
+                                <div class="swiper-3 swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        @foreach ($Portfolios as $Portfolio)
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <img src="{{ url('portfolio/', $Portfolio->image) }}"
+                                                        class="img-fluid" alt="App dashboard" width="808"
+                                                        height="591">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="owl-nav"><button type="button" role="presentation"
-                                                class="owl-prev"><span aria-label="Previous">‹</span></button><button
-                                                type="button" role="presentation" class="owl-next"><span
-                                                    aria-label="Next">›</span></button>
-                                        </div>
-                                        <div class="owl-dots disabled"></div>
+                                        @endforeach
                                     </div>
                                 </div>
+                                <div class="swiper-button-prev prev-3"></div>
+                                <div class="swiper-button-next next-3"></div>
                             </div>
                             <div class="tab-pane fade" id="development" role="tabpanel"
                                 aria-labelledby="development-tab">
-                                <div class="owl-active-nav">
-                                    <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
-
-                                        <div class="owl-stage-outer">
-                                            <div class="owl-stage"
-                                                style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
-                                                @foreach ($Portfolio_development as $Portfolio_developmen)
-                                                    <div class="owl-item cloned" style="width: 808px;">
-                                                        <div class="item">
-                                                            <img src="{{ url('portfolio/', $Portfolio_developmen->image) }}"
-                                                                class="img-fluid" alt="App dashboard" width="808"
-                                                                height="591">
-                                                        </div>
-                                                    </div>
-                                                @endforeach
-
+                                <div class="swiper-4 swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        @foreach ($Portfolios as $Portfolio)
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <img src="{{ url('portfolio/', $Portfolio->image) }}"
+                                                        class="img-fluid" alt="App dashboard" width="808"
+                                                        height="591">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="owl-nav"><button type="button" role="presentation"
-                                                class="owl-prev"><span aria-label="Previous">‹</span></button><button
-                                                type="button" role="presentation" class="owl-next"><span
-                                                    aria-label="Next">›</span></button>
-                                        </div>
-                                        <div class="owl-dots disabled"></div>
+                                        @endforeach
                                     </div>
                                 </div>
+                                <div class="swiper-button-prev prev-4"></div>
+                                <div class="swiper-button-next next-4"></div>
                             </div>
                         </div>
                     </div>
@@ -413,16 +373,16 @@
     </section>
 
 
-    <section class="section home-contact">
+    <section class="section home-contact" id="contact">
         <div class="container-fluid">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-lg-6 col-sm-8 order-lg-1 order-2" data-aos-offset="0" data-aos="fade-right" data-aos-duration="1000"
-                data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                <div class="col-lg-6 col-sm-8 order-lg-1 order-2" data-aos-offset="0" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <img src="{{ asset('frontend/assets/images/contact (1).png') }}" class="img-fluid">
                 </div>
 
-                <div class="col-lg-6 col-12 order-lg-2 order-1" data-aos-offset="0" data-aos="fade-left" data-aos-duration="1000"
-                data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
+                <div class="col-lg-6 col-12 order-lg-2 order-1" data-aos-offset="0" data-aos="fade-left"
+                    data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="top-center">
                     <div class="row">
                         <div class="col-12">
                             <h2>Get in touch</h2>

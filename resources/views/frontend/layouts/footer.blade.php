@@ -19,19 +19,19 @@
                     <div class="footer__widget partners">
                         <h5>Powered By</h5>
                         <div class="row ">
-                            <div class="col-auto p-1" >
-                                <div class="section__column text-center">
-                                    <img src="{{ asset('frontend/assets/images/01.png') }}" class="icon-lg" alt="Using Software" />
+                            <div class=" col-lg-4 col-sm-auto col-4 p-1" >
+                                <div class="section__column text-center m-0">
+                                    <img src="{{ asset('frontend/assets/images/01.png') }}" class="m-0" alt="Using Software" />
                                 </div>
                             </div>
-                            <div class="col-auto p-1">
-                                <div class="section__column text-center">
-                                    <img src="{{ asset('frontend/assets/images/02.png') }}" class="icon-lg" alt="Using Software" />
+                            <div class=" col-lg-4 col-sm-auto col-4 p-1">
+                                <div class="section__column text-center m-0">
+                                    <img src="{{ asset('frontend/assets/images/02.png') }}" class="m-0" alt="Using Software" />
                                 </div>
                             </div>
-                            <div class="col-auto p-1">
-                                <div class="section__column text-center">
-                                    <img src="{{ asset('frontend/assets/images/03.png') }}" class="icon-lg" alt="Using Software" />
+                            <div class=" col-lg-4 col-sm-auto col-4 p-1">
+                                <div class="section__column text-center m-0">
+                                    <img src="{{ asset('frontend/assets/images/03.png') }}" class="m-0" alt="Using Software" />
                                 </div>
                             </div>
                         </div>
@@ -78,5 +78,8 @@
           </div>
 
       </div>
+      <a href="#" class="whatsapp">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </a>
   </footer>
   <!-- End Footer -->
