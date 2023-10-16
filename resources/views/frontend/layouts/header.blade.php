@@ -34,7 +34,7 @@
                      </div>
                  </li>
                  <li><a href="/index#about">About</a></li>
-                 <li><a href="/index#prtofoilio">Prtofoilio</a></li>
+                 <li><a href="/index#prtofoilio">Portfolio</a></li>
                  <li><a href="/index#contact">Contact</a></li>
                  <li><a href="/list_blogs">Blog</a></li>
              </ul>

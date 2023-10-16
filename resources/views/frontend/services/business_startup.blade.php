@@ -40,7 +40,7 @@
                         <img src="{{ asset('frontend/assets/images/services/icons/business-plan_9590251 1.png') }}"
                             class="img-fluid">
                         <div class="text">
-                            <h4>Business Plans.​</h4>
+                            <h4>Business Plans​</h4>
                             <p>
                                 Foster your business with a tailored plan that fits your industry, and define your
                                 objectives through market analytics. A professional business plan will clear your future
