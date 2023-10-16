@@ -51,7 +51,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/social.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>Social Media Management.​​</h4>
+                            <h4>Social Media Management​​</h4>
                             <p>
                                 Managing your business online presence will strengthen your brand’s identity. We ensure your
                                 brand consistency by using social media-updated tools for publishing and analyzing.
@@ -76,7 +76,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/atom.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>Moderation.​</h4>
+                            <h4>Moderation​</h4>
                             <p>
                                 Responding and monitoring several types of content (comments and messages) across all social
                                 media channels for better ad performance.

@@ -38,7 +38,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/ui-ux.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>UI / UX Designs.​</h4>
+                            <h4>UI / UX Designs​</h4>
                             <p>
                                 We're focusing on creating user interfaces and experiences that are visually appealing,
                                 intuitive, and user-friendly for digital products such as websites, mobile apps, and
@@ -52,7 +52,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/mobile.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>Mobile Development.​​</h4>
+                            <h4>Mobile Development​​</h4>
                             <p>
                                 These services involve the creation of software apps that are designed to run on different
                                 mobile devices. In addition to the development lifecycle, from conceptualization to ongoing
@@ -65,7 +65,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/web.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>Web Development.​​</h4>
+                            <h4>Web Development​​</h4>
                             <p>
                                 Our mission is to create and maintain websites and web apps that require a wide range of
                                 tasks, such as initial planning, design, development, testing, and ongoing maintenance.
@@ -77,7 +77,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/web.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>E-commerce.​​</h4>
+                            <h4>E-commerce​​</h4>
                             <p>
                                 These services are designed to facilitate online transactions, improve customer experiences,
                                 and help your business establish and grow its online presence.
@@ -89,7 +89,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/erp.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>ERP Systems.​​</h4>
+                            <h4>ERP Systems​​</h4>
                             <p>
                                 We help your business or organization by creating ERP systems that are designed to
                                 streamline and centralize various business processes and their functions.

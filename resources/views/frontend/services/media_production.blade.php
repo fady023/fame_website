@@ -40,7 +40,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/Group 1569.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>Photography.​</h4>
+                            <h4>Photography​</h4>
                             <p>
                                 By investing in high-quality images, you will create a powerful connection between your
                                 brand and your audience. Build a more engaging brand presence with us now.
