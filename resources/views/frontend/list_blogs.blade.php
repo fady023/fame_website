@@ -40,7 +40,7 @@
                                 <i class="fa fa-long-arrow-right"></i>
                             </div>
 
-                            <div class="tag tagRed">
+                            <div class="tag" style="background:{{ $Blog->category->color }}"">
                                 {{ $Blog->category->name }}
                             </div>
                         </div>
@@ -56,10 +56,11 @@
                              @php
                                 $img = DB::table("blogallery")->where("blog_id",$Last_Blog->id)->first();
                              @endphp
+                             {{ $Blog->color }}
                                 <img class="img-fluid" src="{{url('blogs/',$img->image)}}" />
                                 <h4><a href="{{url('blog',$Blog->title)}}">{{ $Blog->title }}</a></h4>
                                 <div class="meta">{{ date('d-m-Y', strtotime($Blog->created_at)) }}</div>
-                                <div class="tag tagGreen">
+                                <div class="tag" style="background:{{ $Last_Blog->category->color }}" >
                                    {{ $Last_Blog->category->name }}
                                 </div>
                             </div>

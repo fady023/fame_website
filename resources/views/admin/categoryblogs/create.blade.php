@@ -111,6 +111,10 @@
                         <input class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" type="text" name="name" id="title" value="{{ old('name', '') }}" required>
                     </div>
 
+                    <div class="form-group mb-3">
+                        <label for="product-name">Color<span class="text-danger">*</span></label>  
+                         <input type="color" id="favcolor" name="color" value="#ff0000" required><br>                      
+                    </div>
                   
                 </div> <!-- end card-box -->
 

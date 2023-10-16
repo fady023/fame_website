@@ -29,9 +29,11 @@
     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap w-100">
             <thead>
                 <tr>
-                   
                      <th>
                        name
+                    </th>
+                     <th>
+                       color
                     </th>
                     <th>
                         Action
@@ -41,10 +43,12 @@
             <tbody>
           
                     @foreach($CategoryBlogs as $CategoryBlog)
-                   
                         <tr>
                             <td>
                                 {{$CategoryBlog->name}}
+                            </td>
+                            <td>
+                                {{$CategoryBlog->color}}
                             </td>
                             <td>
                                  <a class="btn btn-info" href="{{route('categoryblogsEdit',['admin','categoryblogs' ,'edit',$CategoryBlog->id] )}}">
