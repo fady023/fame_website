@@ -4,7 +4,7 @@
          <div class="container-fluid">
 
              <div class="nav-header">
-                 <a href="/index#home" class="brand">
+                 <a href="#home" class="brand">
                      <img src="{{ asset('frontend/assets/brand/logo.png') }}" class="logo" alt="Smooth" />
                  </a>
                  <button class="toggle-bar">
