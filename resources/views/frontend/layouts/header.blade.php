@@ -4,7 +4,7 @@
          <div class="container-fluid">
 
              <div class="nav-header">
-                 <a href="#home" class="brand">
+                 <a href="/#home" class="brand">
                      <img src="{{ asset('frontend/assets/brand/logo.png') }}" class="logo" alt="Smooth" />
                  </a>
                  <button class="toggle-bar">
@@ -20,7 +20,7 @@
              </div>
              <!-- End Header menu for mobile -->
              <ul class="menu">
-                 <li class="active"><a href="#home">Home</a></li>
+                 <li class="active"><a href="/#home">Home</a></li>
                  <li class="has-drop">
                      <a href="#services" role="button" data-toggle="dropdown" aria-expanded="false">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                      <div class="dropdown-menu">
@@ -33,9 +33,9 @@
                          <a class="dropdown-item" href="{{ url('/services/business_startup') }}">Business Startup</a>
                      </div>
                  </li>
-                 <li><a href="#about">About</a></li>
-                 <li><a href="#prtofoilio">Portfolio</a></li>
-                 <li><a href="#contact">Contact</a></li>
+                 <li><a href="/#about">About</a></li>
+                 <li><a href="/#prtofoilio">Portfolio</a></li>
+                 <li><a href="/#contact">Contact</a></li>
                  <li><a href="/list_blogs">Blog</a></li>
              </ul>
              <!--<ul class="attributes">
