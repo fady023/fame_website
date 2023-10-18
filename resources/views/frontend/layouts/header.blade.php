@@ -20,9 +20,9 @@
              </div>
              <!-- End Header menu for mobile -->
              <ul class="menu">
-                 <li class="active"><a href="/index#home">Home</a></li>
+                 <li class="active"><a href="#home">Home</a></li>
                  <li class="has-drop">
-                     <a href="/index#services" role="button" data-toggle="dropdown" aria-expanded="false">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                     <a href="#services" role="button" data-toggle="dropdown" aria-expanded="false">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                      <div class="dropdown-menu">
                          <a class="dropdown-item" href="{{ url('/services/web_mobile_services') }}">Web and Mobile Development</a>
                          <a class="dropdown-item" href="{{ url('/services/digital_marketing') }}">Digital Marketing</a>
@@ -33,9 +33,9 @@
                          <a class="dropdown-item" href="{{ url('/services/business_startup') }}">Business Startup</a>
                      </div>
                  </li>
-                 <li><a href="/index#about">About</a></li>
-                 <li><a href="/index#prtofoilio">Portfolio</a></li>
-                 <li><a href="/index#contact">Contact</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#prtofoilio">Portfolio</a></li>
+                 <li><a href="#contact">Contact</a></li>
                  <li><a href="/list_blogs">Blog</a></li>
              </ul>
              <!--<ul class="attributes">

@@ -49,22 +49,22 @@
               </div>
               <div class="col-lg-auto col-sm-3 mb-3">
                   <h5>Menu</h5>
-                  <a href="/index#home" class="footer-link">
+                  <a href="#home" class="footer-link">
                       Home
                   </a>
-                  <a href="/index#services" class="footer-link">
+                  <a href="#services" class="footer-link">
                       Services
                   </a>
-                  <a href="/index#about" class="footer-link">
+                  <a href="#about" class="footer-link">
                       About
                   </a>
-                  <a href="/index#prtofoilio" class="footer-link">
+                  <a href="#prtofoilio" class="footer-link">
                       Portfolio
                   </a>
                   <a href="/list_blogs" class="footer-link">
                       Blog
                   </a>
-                  <a href="/index#contact" class="footer-link">
+                  <a href="#contact" class="footer-link">
                       Contact
                   </a>
               </div>
