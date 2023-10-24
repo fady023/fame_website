@@ -20,6 +20,6 @@ class CategoryBlog extends Model
     ];
 
     protected $fillable = [
-        'name'
+        'name','color'
     ];
 }
