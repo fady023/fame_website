@@ -18,7 +18,7 @@
                          @php
                             $img = DB::table("blogallery")->where("blog_id",$blog->id)->first();
                         @endphp
-                        <img class="img-fluid" src="{{url('blogs/',$img->image)}}" />
+                        <img class="img-fluid" src="{{url('public/blogs/',$img->image)}}" />
                             {!! $blog->details !!}
                             <br>
                             Tags :  {{ $blog->tag }}
