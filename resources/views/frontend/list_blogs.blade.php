@@ -16,7 +16,7 @@
                             $img = DB::table("blogallery")->where("blog_id",$Blog->id)->first();
                         @endphp
                         <div class="item">
-                            <a href="{{url('blog',$Blog->title)}}">
+                            <a href="{{url('public/blog',$Blog->title)}}">
                                 <img class="img-fluid" src="{{url('blogs/',$img->image)}}" />
                             </a>
                             <h3>
