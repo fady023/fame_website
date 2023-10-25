@@ -17,7 +17,7 @@
                         @endphp
                         <div class="item">
                             <a href="{{url('public/blog',$Blog->title)}}">
-                                <img class="img-fluid" src="{{url('blogs/',$img->image)}}" />
+                                <img class="img-fluid" src="{{url('public/blogs/',$img->image)}}" />
                             </a>
                             <h3>
                                 {{ $Blog->title }}
