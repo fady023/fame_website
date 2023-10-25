@@ -116,6 +116,10 @@
                         <textarea class="form-control summernote"  rows="20" name="details"  placeholder="Please enter details" required></textarea>
                     </div>
 
+                    <div class="form-group mb-3">
+                        <label for="product-name">Tags<span class="text-danger">*</span></label>                        
+                        <input class="form-control {{ $errors->has('tag') ? 'is-invalid' : '' }}"  placeholder="Example blog,blogs" type="text" name="tag" value="{{ old('tag', '') }}" required>
+                    </div>
 
   <div class="form-group">
                     <label for="product-category">Categor <span class="text-danger">*</span></label>

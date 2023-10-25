@@ -38,6 +38,7 @@ class BlogController extends Controller
             'title' => $request->title,
             'details'=> $request->details,
             'category_id'=> $request->category_id,
+            'tag'=> $request->tag,
         ]);
           
 
@@ -83,6 +84,7 @@ class BlogController extends Controller
             'title' => $request->title,
             'details'=> $request->details,
             'category_id'=> $request->category_id,
+            'tag'=> $request->tag,
         ]);
           
        

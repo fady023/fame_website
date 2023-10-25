@@ -20,7 +20,7 @@ class Blog extends Model
     ];
 
     protected $fillable = [
-        'title', 'details','category_id'
+        'title', 'details','category_id','tag'
     ];
 
 

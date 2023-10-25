@@ -55,14 +55,16 @@ class AppServiceProvider extends ServiceProvider
    
     public function boot()
     {
-        //
-        view()->share('title',$this->getTitle());
-        view()->share('description',$this->getdescription());
-        view()->share('keywords',$this->getkeywords());
+        try{ 
+            view()->share('title',$this->getTitle());
+            view()->share('description',$this->getdescription());
+            view()->share('keywords',$this->getkeywords());
 
-        view()->share('phone',$this->getphone());
-        view()->share('email',$this->getemail());
-        view()->share('address',$this->getaddress());
+            view()->share('phone',$this->getphone());
+            view()->share('email',$this->getemail());
+            view()->share('address',$this->getaddress());
+        } catch (\Exception $e) {
+        }
 
     }
 }

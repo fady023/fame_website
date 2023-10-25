@@ -122,6 +122,11 @@
                         <textarea class="form-control summernote"  rows="20" name="details" required> {{ $edit_Blogs->details }} </textarea>
                     </div>
 
+                    <div class="form-group mb-3">
+                        <label for="product-name">Tags<span class="text-danger">*</span></label>                        
+                        <input class="form-control {{ $errors->has('tag') ? 'is-invalid' : '' }}" placeholder="Example blog,blogs" type="text" name="tag" value="{{ $edit_Blogs->tag }}" required>
+                    </div>
+
                      <div class="form-group">
                     <label for="product-category">Developer <span class="text-danger">*</span></label>
                     <select class="form-control select2 {{ $errors->has('developer') ? 'is-invalid' : '' }}" name="category_id" id="category_id" required>

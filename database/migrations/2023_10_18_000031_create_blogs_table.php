@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('details');
             $table->unsignedBigInteger('category_id');
-
+            $table->text('tag');
             $table->foreign('category_id')->references('id')->on('categoryblogs');
 
             
