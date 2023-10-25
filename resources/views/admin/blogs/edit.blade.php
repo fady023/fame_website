@@ -156,7 +156,7 @@
                                     <div class="column" style="height:100px;border:1px solid #eaeaea;text-align: center;">
                                     <button type="button" style="background-color: red;color: white;" onclick="location.href='{{ url('/dashboard/admin/blogs/del/blogs/del/'.$image->id) }}';" class="btn btn-light my-2">x</button>
 
-                                        <img src="{{url('blogs/',$image->image)}}"style="height:100px" />
+                                        <img src="{{url('public/blogs/',$image->image)}}"style="height:100px" />
                                     </div>
                            
                         @endforeach
