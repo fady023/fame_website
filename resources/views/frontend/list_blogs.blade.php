@@ -58,8 +58,8 @@
                              @endphp
                              {{ $Blog->color }}
                                 <img class="img-fluid" src="{{url('public/blogs/',$img->image)}}" />
-                                <h4><a href="{{url('blog',$Blog->title)}}">{{ $Blog->title }}</a></h4>
-                                <div class="meta">{{ date('d-m-Y', strtotime($Blog->created_at)) }}</div>
+                                <h4><a href="{{url('blog',$Last_Blog->title)}}">{{ $Last_Blog->title }}</a></h4>
+                                <div class="meta">{{ date('d-m-Y', strtotime($Last_Blog->created_at)) }}</div>
                                 <div class="tag" style="background:{{ $Last_Blog->category->color }}" >
                                    {{ $Last_Blog->category->name }}
                                 </div>
