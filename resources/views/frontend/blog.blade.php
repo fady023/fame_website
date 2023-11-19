@@ -20,7 +20,7 @@
                         @endphp
                         <img class="img-fluid" src="{{url('public/blogs/',$img->image)}}" />
                             {!! $blog->details !!}
-                            <br>
+                            <br><br>
                             Tags :  {{ $blog->tag }}
                     </div>
                 </div>

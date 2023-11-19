@@ -64,11 +64,36 @@
                              <td>
                                 {{$Contact->message}}
                             </td>
-                            
+                             <td>
+                                <a class="btn btn-danger" href="#" data-toggle="modal" data-target="#danger-alert-modal{{$Contact->id}}">
+                                    Destroy 
+                                </a>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>
         </table>
+
+          @foreach($Contacts as $Contact)
+                     <!-- Danger Alert Modal -->
+                     <div id="danger-alert-modal{{$Contact->id}}" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content modal-filled bg-danger">
+                                    <div class="modal-body p-4">
+                                        <div class="text-center">
+                                            <input type="hidden" value="{{$Contact->id}}" name="del_id" id="app_id">
+
+                                                 <i class="dripicons-wrong h1 text-white"></i>
+                                                <h4 class="mt-2 text-white">Are you sure to delete ?</h4>
+                                                <p class="mt-3 text-white">Do you really want to delete these records? This process cannot be undone.</p>
+                                                <button type="button"  onclick="location.href='{{ url('/dashboard/admin/contacts/destroy/contacts/destroy/'.$Contact->id) }}';" class="btn btn-light my-2">delete</button>
+
+                                        </div>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal --> 
+        @endforeach
     </div>
    
 

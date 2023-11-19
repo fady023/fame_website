@@ -20,5 +20,9 @@ class ContactController extends Controller
         return view('admin.contact.index', compact('Contacts'));
     }
 
-    
+    public function destroy(request $request,$id)
+    {
+        Contact::where('id',$request->id)->delete();
+        return back();
+    }
 }
