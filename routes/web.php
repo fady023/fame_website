@@ -26,7 +26,7 @@ use App\Http\Controllers\Admin\QouteController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/index', [IndexController::class, 'index'])->name('index');
+Route::get('/', [IndexController::class, 'index'])->name('index');
 Route::get('/services/web_mobile_services', [IndexController::class, 'web_mobile_services'])->name('web_mobile_services');
 Route::get('/services/digital_marketing', [IndexController::class, 'digital_marketing'])->name('digital_marketing');
 Route::get('/services/media_production', [IndexController::class, 'media_production'])->name('media_production');
