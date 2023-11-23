@@ -38,7 +38,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/ui-ux.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>UI / UX Designs.​</h4>
+                            <h4>UI / UX Designs​</h4>
                             <p>
                                 We're focusing on creating user interfaces and experiences that are visually appealing,
                                 intuitive, and user-friendly for digital products such as websites, mobile apps, and
@@ -52,7 +52,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/mobile.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>Mobile Development.​​</h4>
+                            <h4>Mobile Development​​</h4>
                             <p>
                                 These services involve the creation of software apps that are designed to run on different
                                 mobile devices. In addition to the development lifecycle, from conceptualization to ongoing
@@ -65,7 +65,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/web.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>Web Development.​​</h4>
+                            <h4>Web Development​​</h4>
                             <p>
                                 Our mission is to create and maintain websites and web apps that require a wide range of
                                 tasks, such as initial planning, design, development, testing, and ongoing maintenance.
@@ -77,7 +77,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/web.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>E-commerce.​​</h4>
+                            <h4>E-commerce​​</h4>
                             <p>
                                 These services are designed to facilitate online transactions, improve customer experiences,
                                 and help your business establish and grow its online presence.
@@ -89,7 +89,7 @@
                     <div class="item">
                         <img src="{{ asset('frontend/assets/images/services/icons/erp.png') }}" class="img-fluid">
                         <div class="text">
-                            <h4>ERP Systems.​​</h4>
+                            <h4>ERP Systems​​</h4>
                             <p>
                                 We help your business or organization by creating ERP systems that are designed to
                                 streamline and centralize various business processes and their functions.
@@ -127,30 +127,22 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 px-sm-3 px-0">
-                    <div class="owl-active-nav">
-                        <div class="owl-carousel js-owl-screenshot owl-loaded owl-drag">
-
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage"
-                                    style="transform: translate3d(-5250px, 0px, 0px); transition: all 1.0ss ease 0s; width: 8400px;">
-                                    @foreach ($projects as $project)
-                                        <div class="owl-item cloned" style="width: 1050px;">
-                                            <div class="item">
-                                                <img src="{{ url('projects/', $project->image) }}" class="img-fluid"
-                                                    alt="App dashboard" width="1050" height="591">
-                                                    <h5>Fashion E-commerce Web site</h5>
-                                            </div>
-                                        </div>
-                                    @endforeach
-
+                    <div class="swiper-1 swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            @foreach ($projects as $project)
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="{{ url('projects/', $project->image) }}" class="img-fluid"
+                                            alt="App dashboard" width="1050" height="591">
+                                        <h5>Fashion E-commerce Web site</h5>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span
-                                        aria-label="Previous">‹</span></button><button type="button" role="presentation"
-                                    class="owl-next"><span aria-label="Next">›</span></button></div>
-                            <div class="owl-dots disabled"></div>
+                            @endforeach
                         </div>
                     </div>
+                    <div class="swiper-button-prev prev-1"></div>
+                    <div class="swiper-button-next next-1"></div>
                 </div>
             </div>
         </div>

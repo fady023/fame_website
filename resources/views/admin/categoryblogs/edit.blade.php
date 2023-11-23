@@ -114,6 +114,12 @@
                         <label for="product-name">name<span class="text-danger">*</span></label>                        
                         <input class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" type="text" name="name" id="title" value="{{ $edit_CategoryBlogs->name }}" required>
                     </div>
+
+                     <div class="form-group mb-3">
+                        <label for="product-name">Color<span class="text-danger">*</span></label>  
+                         <input type="color" id="favcolor" name="color" value="{{ $edit_CategoryBlogs->color }}"  required><br>                      
+                    </div>
+
                 </div> <!-- end card-box -->
 
             </div> <!-- end col -->
